@@ -1,0 +1,44 @@
+.Header {
+    position: relative;
+    width: 100%;
+    min-height: 7vh;
+    background-color: #555;
+    overflow: hidden;
+    display: flex;
+}
+
+.seperator{
+    margin: 1.5vh 1vw 1vh 0vw;
+    border-left-style: solid;
+    border-left-width: .3vw;
+    border-left-color: #bd93ee;
+}
+
+.Header img {
+    margin: 1.5vh 1vw 0vh 1vw;
+    cursor:pointer;
+    height: auto;
+    width: 20%;
+    object-fit: contain;
+}
+
+.Header button {
+    padding: 1vh 1vw 1vh 1vw;
+    color: white;
+    font-size: 1.7vw;
+    cursor: pointer;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.Header button:last-child{
+    margin-left: auto
+}
+
+.Header button:hover{
+    color: #bd93ee;
+    transition: color .5s ease-out;
+}
