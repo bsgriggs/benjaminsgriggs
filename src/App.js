@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import './App.css';
 
 function App(){
   const sayHello = () => {
@@ -8,11 +9,13 @@ function App(){
 
 
   return(
-    <div>
+    <div className="App">
         <Header />
-        <h1>Hello React</h1>
-        <a class="twitter-timeline" href="https://twitter.com/griggsBenjamin1?ref_src=twsrc%5Etfw">Tweets by griggsBenjamin1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-        <button onClick={sayHello}>Hello</button>
+        <div className="Body">
+          <h1>Hello React</h1>
+          <a className="twitter-timeline" href="https://twitter.com/griggsBenjamin1?ref_src=twsrc%5Etfw">Tweets by griggsBenjamin1</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> 
+          <button onClick={sayHello}>Hello</button> 
+        </div>
     </div>
   );
 }

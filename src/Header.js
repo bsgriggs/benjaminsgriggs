@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from './BSGriggs.svg';
+import logo from './BenjaminSGriggs.svg';
 import './Header.css';
 
 function Header() {
+
   return (
     <div className="Header">
         <img src={logo} className="App-logo" alt="logo" />
-        <span className="seperator"></span>
-        <button> Benjamin Griggs</button> 
-        <button> Twitter</button>
-        <button> Minecraft Server</button>
-        <button> Feedback</button>
+        <button>About</button> 
+        <button>Twitter</button>
+        <button>Minecraft Server</button>
+        <button>Feedback</button>
     </div>
   );
 }

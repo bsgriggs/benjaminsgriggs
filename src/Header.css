@@ -1,44 +1,41 @@
 .Header {
     position: relative;
     width: 100%;
-    min-height: 7vh;
-    background-color: #555;
+    height: 7vh;
+    min-height: 50px;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
     overflow: hidden;
     display: flex;
 }
 
-.seperator{
-    margin: 1.5vh 1vw 1vh 0vw;
-    border-left-style: solid;
-    border-left-width: .3vw;
-    border-left-color: #bd93ee;
-}
-
 .Header img {
-    margin: 1.5vh 1vw 0vh 1vw;
-    cursor:pointer;
+    margin: 1vh 1vw 0vh 1vw;
+    cursor: pointer;
     height: auto;
-    width: 20%;
+    min-width: 250px;
+    max-width: 3vw;
     object-fit: contain;
 }
 
 .Header button {
     padding: 1vh 1vw 1vh 1vw;
     color: white;
-    font-size: 1.7vw;
-    cursor: pointer;
+    font-size: calc(1vw + 9px);
     background-color: Transparent;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline:none;
+    font-weight: bold;
 }
 
 .Header button:last-child{
-    margin-left: auto
+    margin-left: auto;
 }
 
 .Header button:hover{
-    color: #bd93ee;
-    transition: color .5s ease-out;
+    color: #ccc;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+
 }
