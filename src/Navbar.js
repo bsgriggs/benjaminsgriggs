@@ -42,7 +42,7 @@ export class Navbar extends React.Component{
 
 				<div className="Navbar">
 					<img src={logo} alt="logo" />
-					<NavLink to='/' onMouseEnter={this.slideNav} onMouseLeave={this.slideNav} isActive={FirstNavActive}>Benjamin Griggs</NavLink>
+					<NavLink to='/' onMouseEnter={this.slideNav} onMouseLeave={this.slideNav} isActive={FirstNavActive}>Benjamin</NavLink>
 					<NavLink to='/twitter'>Twitter</NavLink>
 					<NavLink to='/minecraft'>Minecraft Server</NavLink>
 					<NavLink to='/feedback'>Feedback</NavLink>
