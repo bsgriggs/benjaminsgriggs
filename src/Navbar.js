@@ -13,10 +13,6 @@ export class Navbar extends React.Component{
 		this.slideNav = this.slideNav.bind(this);
 	}
 
-	clickResume(){
-		window.open("./Benjamin_Griggs_Resume.pdf");
-	}
-
 	slideNav(){
 		const slid = document.getElementById("slider");
 		slid.classList.toggle("down");

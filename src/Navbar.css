@@ -2,29 +2,27 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 7vh;
-    min-height: 45px;
+    height: 50px;
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    transform: translateY(-5.5vh);
+    transform: translateY(-35px);
 }
 
 .Navbar img {
     margin: 1vh 1.5vw 0vh 1vw;
     cursor: pointer;
     height: auto;
-    max-height: 45px;
+    max-height: 50px;
     min-width: 215px;
     max-width: 20vw;
 }
 
 .Navbar a {
-    font-size: calc(1.2vw + 7.5px);
+    font-size: calc(.9vw + 7.5px);
     font-weight: bold;
     color: white;
     text-decoration: none;
-    line-height: 7vh;
-    height: 7vh;
-    min-height: 45px;
+    line-height: 50px;
+    height: 50px;
     padding: 0vh 1vw 0vh 1vw;
     cursor: pointer;
     list-style: none;
@@ -63,20 +61,18 @@
     flex-direction: row;
     color: white;
     width: 75%;
-    height: 5.5vh;
-    min-height: 35px;
+    height: 35px;
     background-image: linear-gradient(to right, #434343 0%, black 75%);
     opacity: .85;
 }
 
 .Slider a{
-    height: 5.5vh;
-    min-height: 35px;
+    height: 35px;
     padding: 0vh 1vw 0vh 1vw;
     cursor: pointer;
-    font-size: calc(.7vw + 11.5px);
+    font-size: calc(.5vw + 10.5px);
     font-weight: bold;
-    line-height: 5.5vh;
+    line-height: 35px;
     color: white;
     text-decoration: none;
     list-style: none;
@@ -101,12 +97,12 @@
 }
 
 .up{
-    transform: translateY(0vh);
+    transform: translateY(5px);
     transition: ease .7s;
 }
 
 .down {
     transition: ease .7s;
-    transform: translateY(7vh);
+    transform: translateY(49px);
 }
 
