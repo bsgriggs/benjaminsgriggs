@@ -1,20 +1,22 @@
-import React from 'react';
-import { Header } from './Header';
-import { FramedImage } from './FramedImage'
-import professionalPic from './imgs/professionalPicTrim.jpg'
-import './App.css';
+import React from 'react'
+import About from './UI Components/About/About'
+import Skill from './UI Components/About/Skill'
+import Project from './UI Components/About/Project'
+import { Navbar } from "./Navbar"
+import './App.css'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 export class App extends React.Component{
-  render(){
-    return(
-      <div className="App">
-      <Header/>
-      <div className="Body">
-        <a className="twitter-timeline" href="https://twitter.com/griggsBenjamin1?ref_src=twsrc%5Etfw">Tweets by griggsBenjamin1</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> 
-        <button onClick={() => {alert("Hello")}}>Hello</button>
-        <FramedImage image={professionalPic} alt={"Me"} caption={"Hello, its me."}/>
-      </div>
-  </div>
-    );
-  }
+	render(){
+		return(
+			<BrowserRouter>
+				<Route path='/' component={Navbar} />
+				<div className="App">
+					<Route exact path='/' component={About} />
+					<Route exact path='/skill' component={Skill} />
+					<Route exact path='/project' component={Project} />
+				</div>
+			</BrowserRouter>
+		);
+	}
 }
