@@ -1,0 +1,36 @@
+.rowImages{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.rowImages img{
+	max-width: 8%;
+}
+
+.rowImages p{
+    text-align: center;
+}
+
+h3{
+	text-align: center;
+	border-bottom-style: groove;
+	width: 50%;
+	transform: translateX(50%);
+	font-size: calc(1vw + 20px);
+}
+
+.Skill p{
+    text-align: center;
+    font-size: calc(.9vw + 7.5px);
+}
+
+.Skill p a{
+	color: #98700D;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.Skill p a:hover{
+	color: #C28E0E;
+	text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+.minecraft .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minecraft .status{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0vw 0vh 5vw;
+    width: 65vw;
+}
+
+.minecraft .status #left, #right{
+    font-size: calc(.9vw + 7.5px);
+    margin: 0vh 2vw;
+}
