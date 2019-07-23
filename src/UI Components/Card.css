@@ -1,0 +1,43 @@
+.Card {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    position: relative;
+    padding: 0vh 6vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 7px;
+    height: 11vh;
+    cursor: pointer;
+}
+
+.Card:hover{
+    background-image: linear-gradient(225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+}
+
+.Card p{
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: calc(.9vw + 5.5px) !important;
+    left: 8px;
+    top: 0;
+    line-height: 0;
+}
+
+.Card img{
+    width: 5vw;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+}
+
+.Card button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5vh 5vw;
+    opacity: 0;
+    cursor: pointer;
+    height: 11vh;
+}

@@ -10,7 +10,24 @@
     width: 65vw;
 }
 
-.minecraft .status #left, #right{
+.minecraft .Row #left,.minecraft .Row #right, .minecraft .Row #center{
     font-size: calc(.9vw + 7.5px);
     margin: 0vh 2vw;
+    text-align: center;
+}
+
+.minecraft .mineImg{
+    width: 35vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .minecraft .mineImg{
+        width: 70vw !important;
+        transform: translateX(20%);
+    }
+
+    .minecraft .Row #left,.minecraft .Row #right, .minecraft .Row #center{
+        font-size: calc(1vw + 10px) !important;
+        margin: 5vh 5vw;
+    }
 }

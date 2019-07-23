@@ -11,12 +11,17 @@ export class Navbar extends React.Component{
 
 		//other methods
 		this.slideNav = this.slideNav.bind(this);
+		this.clickLogo = this.clickLogo.bind(this);
 	}
 
 	slideNav(){
 		const slid = document.getElementById("slider");
 		slid.classList.toggle("down");
 		slid.classList.toggle("up");
+	}
+
+	clickLogo(){
+		window.open("/","_self")
 	}
 
  	//trigger exact to behavior for NavLink Benjamin Griggs when a sub NavLink is active
@@ -41,7 +46,7 @@ export class Navbar extends React.Component{
 				</div>
 
 				<div className="Navbar">
-					<img src={logo} alt="logo"/>
+					<img src={logo} alt="logo" onClick={this.clickLogo}/>
 					<NavLink to='/' onMouseEnter={this.slideNav} onMouseLeave={this.slideNav} isActive={FirstNavActive}>Home</NavLink>
 					<NavLink to='/minecraft'>Minecraft</NavLink>
 					<NavLink to='/travel'>Travel</NavLink>

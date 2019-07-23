@@ -16,3 +16,7 @@
     text-align: center;
     line-height: 1.5;
 }
+
+.clickable{
+    cursor: pointer ;
+}
