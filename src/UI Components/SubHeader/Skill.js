@@ -18,7 +18,6 @@ const Skill = () => {
 	return(
 		<div className="Skill">
 			<h3>Skills</h3>
-				<div>
 					<h5>Programming Languages</h5>
 					<div className="rowImages">
 						<img alt="mendix" src={mendix}></img>
@@ -31,14 +30,12 @@ const Skill = () => {
 						<img alt="react" src={react}></img>
 						<img alt="oracle" src={oracle}></img>
 					</div>
-				</div>
-				<div>
 					<h5>Operating Systems</h5>
 					<div className="rowImages">
 						<img alt="windows" src={windows}></img>
 						<img alt="raspberry pi" src={raspberry}></img>
 						<img alt="ubuntu" src={ubuntu}></img>
-					</div>
+					
 				</div>
 			<p>If you want to learn more about what I can do, then check out my <strong><a href="/project">Projects</a></strong> </p>
 		</div>

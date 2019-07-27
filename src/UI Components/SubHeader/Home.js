@@ -49,10 +49,10 @@ const About = () => {
 
 
   return(
-		<div>
+		<div className="Home">
 			<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
 			<div className="Row">
-				<div className="Home">
+				<div>
 					<h3>About Me</h3>
 					<p>I am a <strong><a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a></strong> Computer
 					 and Information Technology student. I work for Purdue's IT Enterprise Solutions as an Application Developer.
@@ -71,22 +71,20 @@ const About = () => {
 			</div>
 
 			<div className= "Row">
-				<div className="Home">
+				<div>
 					<h3>Skills</h3>
-					<div>
-						<h5>Programming Languages</h5>
-						<div className="rowImages">
-							<img alt="mendix logo" src={mendix}></img>
-							<img alt="java logo" src={java}></img>
-							<img alt="c logo" src={c}></img>
-							<img alt="c# logo" src={cSharp}></img>
-							<img alt="css logo" src={css}></img>
-							<img alt="html logo" src={html}></img>
-							<img alt="javascript logo" src={javascript}></img>
-							<img alt="react" src={react}></img>
-							<img alt="oracle logo" src={oracle}></img>
-							<img alt="postgresql logo" src={postgresql}></img>
-						</div>
+					<h5>Programming Languages</h5>
+					<div className="rowImages">
+						<img alt="mendix logo" src={mendix}></img>
+						<img alt="java logo" src={java}></img>
+						<img alt="c logo" src={c}></img>
+						<img alt="c# logo" src={cSharp}></img>
+						<img alt="css logo" src={css}></img>
+						<img alt="html logo" src={html}></img>
+						<img alt="javascript logo" src={javascript}></img>
+						<img alt="react" src={react}></img>
+						<img alt="oracle logo" src={oracle}></img>
+						<img alt="postgresql logo" src={postgresql}></img>
 					</div>
 					<div>
 						<h5>Operating Systems</h5>
@@ -99,7 +97,6 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className="Home">
 				<h3>Projects</h3>
 				
 				<h5>Agriculture Information Technology Procurement</h5>
@@ -107,19 +104,17 @@ const About = () => {
 					<div className="medImg">
 						<FramedImage image={atp} alt={"AITP Homepage"} caption={"AITP Homepage"} className="medImg" click={clickATP} />
 					</div>
-					<div className="Home">
-						<p >Agriculture Information Technology Procurement (AITP) is a web application design for
-							Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
-							leased devices. <strong><a href="/project">Learn more about AITP.</a></strong></p>
-					</div>	
+					<p >Agriculture Information Technology Procurement (AITP) is a web application design for
+						Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
+						leased devices. <strong><a href="/project">Learn more about AITP.</a></strong>
+					</p>	
 				</div>
 
 				<h5>Career Path Maker</h5>
 				<div className="Row">
-					<div className="Home">
-						<p >Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff
-							to plan their future careers within the university. <strong><a href="/project">Learn more about CPM.</a></strong></p>
-					</div>
+					<p >Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff
+						to plan their future careers within the university. <strong><a href="/project">Learn more about CPM.</a></strong>
+					</p>
 					<div className="medImg">
 						<FramedImage image={cpm} alt={"CPM Homepage"} caption={"CPM Homepage"} className="medImg" click={clickCPM}/>
 					</div>
@@ -130,19 +125,17 @@ const About = () => {
 					<div className="smlImg">
 						<FramedImage image={fountain} alt={"Purdue Engineering Fountain"} caption={"Purdue Engineering Fountain"} className="smlImg" click={clickBenJo}/>
 					</div>
-					<div className="Home">
-						<p >This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
-							Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's
-							status It runs HTML 5, CSS 3, JQuery 3.3.1, and React. <strong><a href="/project">Learn more about BenJoDev.</a></strong></p>
-					</div>
+					<p >This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
+						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's
+						status It runs HTML 5, CSS 3, JQuery 3.3.1, and React. <strong><a href="/project">Learn more about BenJoDev.</a></strong>
+					</p>
 				</div>
 				
 				<h5>Cost Distripution</h5>
 				<div className="Row">
-					<div className="Home">
-						<p >Cost Disptripution is a web application used by Purdue University to estimate and track the costs of their construction 
-							projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="/project">Learn more about Cost Dipstripution.</a></strong></p>
-					</div>
+					<p >Cost Disptripution is a web application used by Purdue University to estimate and track the costs of their construction 
+						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="/project">Learn more about Cost Dipstripution.</a></strong>
+					</p>
 					<div className="medImg">
 						<FramedImage image={cost} alt={"Cost Disptripution Overview"} caption={"Cost Dipstripution Overview"} className="medImg" click={clickCost}/>
 					</div>
@@ -151,14 +144,12 @@ const About = () => {
 				<h5>ACSII Tetris</h5>
 				<div className="Row">
 					<div className="smlImg">
-						<FramedImage image={tetris} alt={"Cost Disptripution Overview"} caption={"Cost Dipstripution Overview"} className="smlImg" click={clickTetris}/>
+						<FramedImage image={tetris} alt={"Tetris User Interface"} caption={"Tetris User Interface"} className="smlImg" click={clickTetris}/>
 					</div>
-					<div className="Home">
-						<p > ACSII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
-						the randomly selected blocks to be dropped. <strong><a href="/project">Learn more about ACSII Tetris.</a></strong></p>	
-					</div>
+					<p > ACSII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
+						the randomly selected blocks to be dropped. <strong><a href="/project">Learn more about ACSII Tetris.</a></strong>
+					</p>
 				</div>
-			</div>
 			
 			<h3>Contact</h3>
 		</div>

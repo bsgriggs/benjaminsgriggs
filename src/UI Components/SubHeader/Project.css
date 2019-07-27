@@ -1,6 +1,55 @@
+@media only screen and (max-width: 700px) {
+	.Row{ display: inline !important;}
+
+	.lrgImg,.medImg,.smlImg{ 
+		width: 85vw !important;
+		transform: translateX(7%);
+	}
+
+	.Project p, .Project a{	font-size: calc(1vw + 10px) !important; text-align: center;}
+	
+	
+	.Project h3{font-size: calc(1vw + 20px) !important;}
+	.Project h4{font-size: calc(1vw + 12px) !important;}
+	.Project h5{font-size: calc(1vw + 10px) !important;}
+	.Project h6{font-size: calc(1vw + 7px) !important;}
+}
+
+.rowImages img{
+	max-width: 8%;
+}
+
+.Project h3, .Project h4, .Project h5, .Project h6{
+	text-align: center;
+}
+
 .Project h3{
-    text-align: center; 
 	border-bottom-style: groove;
 	font-size: calc(1vw + 20px);
 	transform: translateX(50%);
+	width: 50%;
+}
+.Project h4{font-size: calc(1vw + 11px);}
+.Project h5{font-size: calc(1vw + 7.5px);}
+.Project h6{font-size: calc(1vw + 4px);}
+
+.Project p{
+	font-size: calc(.9vw + 7.5px);
+	margin: 5vh 5vw;
+}
+
+.Project i{
+	margin: 5vh 5vw;
+}
+
+.Project p a{
+	color: #98700D;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: calc(.9vw + 7.5px);
+}
+
+.Project p a:hover{
+	color: #C28E0E;
+	text-decoration: underline;
 }
