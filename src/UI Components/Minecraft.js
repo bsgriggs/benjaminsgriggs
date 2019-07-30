@@ -43,6 +43,7 @@ const Minecraft = () => {
                 </div>
             </div>
             <h3>How to Join</h3>
+            <h5>How to Join is Comming Soon</h5>
         </div>
     );
 }

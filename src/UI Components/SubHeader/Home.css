@@ -6,13 +6,19 @@
 		transform: translateX(7%);
 	}
 
+	.rowImages img{
+		max-width: 30px;
+		max-height: 30px;
+		margin: 1vh 1vw;
+	}
+
 	.Home p, .Home a{	font-size: calc(1vw + 10px) !important; text-align: center;}
 	.Home h5{font-size: calc(1vw + 11px) !important;}
 	.Home h3{font-size: calc(1vw + 20px) !important;}
 }
 
 .rowImages img{
-	max-width: 8%;
+	width: 8%;
 }
 
 .Home h3{
@@ -35,6 +41,7 @@
 }
 
 .Home i{
+	color: #65379B;
 	margin: 5vh 5vw;
 }
 

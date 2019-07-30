@@ -1,6 +1,7 @@
 import React from 'react'
 import FramedImage from '../FramedImage'
 import professionalPic from '../../imgs/professionalPicTrim.jpg'
+
 import mendix from '../../imgs/mendix.png'
 import java from '../../imgs/java.png'
 import c from '../../imgs/c.png'
@@ -9,24 +10,23 @@ import css from '../../imgs/css.png'
 import html from '../../imgs/html.png'
 import javascript from '../../imgs/javascript.png'
 import react from '../../imgs/React.png'
+import node from '../../imgs/nodejs.svg'
+import git from '../../imgs/github.png'
 import oracle from '../../imgs/oracle.png'
 import postgresql from '../../imgs/PostgreSQL.png'
 import windows from '../../imgs/windows.png'
 import raspberry from '../../imgs/raspberry.png'
 import ubuntu from '../../imgs/ubuntu.png'
+
 import atp from '../../imgs/atpHome.PNG'
 import cpm from '../../imgs/cpmHome.PNG'
 import fountain from '../../imgs/fountain.jpg'
 import cost from '../../imgs/costOverview.PNG'
 import tetris from '../../imgs/tetris.PNG'
+
 import './Home.css';
 
 const About = () => {
-
-	const icon ={
-		color: '#65379B',
-	}
-
 	function clickATP(){
 		window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
 	}
@@ -58,11 +58,11 @@ const About = () => {
 					 and Information Technology student. I work for Purdue's IT Enterprise Solutions as an Application Developer.
 					  In my free time, I like to go for a run, bake cookies, practice new programming techniques, play piano, and play my Nintendo Switch.</p>
 					  <div className="rowImages">
-					  	<i className="fas fa-2x fa-running" style={icon}></i>
-					  	<i className="fas fa-2x fa-cookie-bite" style={icon}></i>
-						<i className="fas fa-2x fa-laptop-code" style={icon}></i>
-						<i className="fas fa-2x fa-music" style={icon}></i>
-						<i className="fas fa-2x fa-gamepad" style={icon}></i>
+					  	<i className="fas fa-2x fa-running"  ></i>
+					  	<i className="fas fa-2x fa-cookie-bite"  ></i>
+						<i className="fas fa-2x fa-laptop-code"  ></i>
+						<i className="fas fa-2x fa-music"  ></i>
+						<i className="fas fa-2x fa-gamepad"  ></i>
 					  </div>
 				</div>
 				<div className="lrgImg">
@@ -73,7 +73,7 @@ const About = () => {
 			<div className= "Row">
 				<div>
 					<h3>Skills</h3>
-					<h5>Programming Languages</h5>
+					<h5>Programming Languages and Tools</h5>
 					<div className="rowImages">
 						<img alt="mendix logo" src={mendix}></img>
 						<img alt="java logo" src={java}></img>
@@ -82,7 +82,11 @@ const About = () => {
 						<img alt="css logo" src={css}></img>
 						<img alt="html logo" src={html}></img>
 						<img alt="javascript logo" src={javascript}></img>
-						<img alt="react" src={react}></img>
+					</div>
+					<div className="rowImages">
+						<img alt="react logo" src={react}></img>
+						<img alt="node js logo" src={node}></img>
+						<img alt="github logo" src={git}></img>
 						<img alt="oracle logo" src={oracle}></img>
 						<img alt="postgresql logo" src={postgresql}></img>
 					</div>
@@ -99,12 +103,12 @@ const About = () => {
 
 				<h3>Projects</h3>
 				
-				<h5>Agriculture Information Technology Procurement</h5>
+				<h5>Agriculture Technology Procurement</h5>
 				<div className="Row">
 					<div className="medImg">
-						<FramedImage image={atp} alt={"AITP Homepage"} caption={"AITP Homepage"} className="medImg" click={clickATP} />
+						<FramedImage image={atp} alt={"ATP Homepage"} caption={"ATP Homepage"} className="medImg" click={clickATP} />
 					</div>
-					<p >Agriculture Information Technology Procurement (AITP) is a web application design for
+					<p >Agriculture Technology Procurement (ATP) is a web application design for
 						Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
 						leased devices. <strong><a href="/project">Learn more about AITP.</a></strong>
 					</p>	
@@ -126,32 +130,33 @@ const About = () => {
 						<FramedImage image={fountain} alt={"Purdue Engineering Fountain"} caption={"Purdue Engineering Fountain"} className="smlImg" click={clickBenJo}/>
 					</div>
 					<p >This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
-						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's
-						status It runs HTML 5, CSS 3, JQuery 3.3.1, and React. <strong><a href="/project">Learn more about BenJoDev.</a></strong>
+						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status.
+						 <strong><a href="/project">Learn more about benjaminsgriggs.com.</a></strong>
 					</p>
 				</div>
 				
-				<h5>Cost Distripution</h5>
+				<h5>Cost Distribution</h5>
 				<div className="Row">
-					<p >Cost Disptripution is a web application used by Purdue University to estimate and track the costs of their construction 
-						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="/project">Learn more about Cost Dipstripution.</a></strong>
+					<p >Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction 
+						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="/project">Learn more about Cost Distribution.</a></strong>
 					</p>
 					<div className="medImg">
-						<FramedImage image={cost} alt={"Cost Disptripution Overview"} caption={"Cost Dipstripution Overview"} className="medImg" click={clickCost}/>
+						<FramedImage image={cost} alt={"Cost Distribution Overview"} caption={"Cost Distribution Overview"} className="medImg" click={clickCost}/>
 					</div>
 				</div>
 				
-				<h5>ACSII Tetris</h5>
+				<h5>ASCII Tetris</h5>
 				<div className="Row">
 					<div className="smlImg">
 						<FramedImage image={tetris} alt={"Tetris User Interface"} caption={"Tetris User Interface"} className="smlImg" click={clickTetris}/>
 					</div>
-					<p > ACSII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
-						the randomly selected blocks to be dropped. <strong><a href="/project">Learn more about ACSII Tetris.</a></strong>
+					<p > ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
+						the randomly selected blocks to be dropped. <strong><a href="/project">Learn more about ASCII Tetris.</a></strong>
 					</p>
 				</div>
 			
 			<h3>Contact</h3>
+			<h5>Contact is Comming Soon</h5>
 		</div>
 	);
 }
