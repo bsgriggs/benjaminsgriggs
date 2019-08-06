@@ -1,14 +1,17 @@
 import React from 'react'
-import FramedImage from '../../UI Components/FramedImage'
-import ImageGallery from 'react-image-gallery'
-import atp from '../../imgs/atpHome.PNG'
-import cpm from '../../imgs/cpmHome.PNG'
-import fountain from '../../imgs/fountain.jpg'
-import cost from '../../imgs/costOverview.PNG'
-import tetris from '../../imgs/tetris.PNG'
-
-import atpOrder from '../../imgs/atpOrder.PNG'
-import atpDash from '../../imgs/atpDashboard.PNG'
+import {ImageSlides} from '../ImageSlides'
+//ATP
+import atp from '../../imgs/Screenshots/atpHome.png'
+import atpOrder from '../../imgs/Screenshots/atpOrder.png'
+import atpDash from '../../imgs/Screenshots/atpDashboard.png'
+//CPM
+import cpm from '../../imgs/Screenshots/cpmHome.png'
+//benjaminsgriggs
+import fountain from '../../imgs/fountain.png'
+//cost
+import cost from '../../imgs/Screenshots/costOverview.png'
+//tetris
+import tetris from '../../imgs/Screenshots/tetris.png'
 
 import mendix from '../../imgs/mendix.png'
 import java from '../../imgs/java.png'
@@ -17,58 +20,60 @@ import css from '../../imgs/css.png'
 import html from '../../imgs/html.png'
 import javascript from '../../imgs/javascript.png'
 import react from '../../imgs/React.png'
-import node from '../../imgs/nodejs.svg'
+import node from '../../imgs/nodejs.png'
 import postgresql from '../../imgs/PostgreSQL.png'
 import git from '../../imgs/github.png'
 import raspberry from '../../imgs/raspberry.png'
 import ubuntu from '../../imgs/ubuntu.png'
-import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css'
-
 
 import './Project.css'
 
 const Project = () => {
 
-	const atpGall = [
-		{ original: atp, originalAlt:"Homepage"},
-		{ original: atpOrder, originalAlt: "Order Wizard"},
-		{ original: atpDash, originalAlt: "Database Statistics Charts"}
-	  ]
+	const atpImages = [
+		{ img: atp, caption:"Homepage",description:"Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices."},
+		{ img: atpDash, caption:"Homepage",description:""},
+		{ img: atpOrder, caption:"Homepage",description:""},
+	]
+	const cpmImages = [
+		{ img: cpm, caption:"Homepage",description:"Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff to plan their future careers within the university."},
+	]
+	const bsgImages = [
+		{ img: fountain, caption:"Purdue Engineering Fountain",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status."},
+	]
+	const costImages = [
+		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me."},
+	]
+	const tetrisImages = [
+		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped."},
+	]
 
-	function clickATP(){
-		window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
-	}
+	// function clickATP(){
+	// 	window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
+	// }
 
-	function clickCPM(){
-		window.open('https://cpm.mendixcloud.com', '_blank');
-	}
+	// function clickCPM(){
+	// 	window.open('https://cpm.mendixcloud.com', '_blank');
+	// }
 
-	function clickBenJo(){
-		window.open('https://github.com/bsgriggs/benjodev-react', '_blank');
-	}
+	// function clickBenJo(){
+	// 	window.open('https://github.com/bsgriggs/benjodev-react', '_blank');
+	// }
 
-	function clickCost(){
-		window.open('https://costdistribution100.mendixcloud.com/', '_blank');
-	}
+	// function clickCost(){
+	// 	window.open('https://costdistribution100.mendixcloud.com/', '_blank');
+	// }
 
-	function clickTetris(){
-		window.open('https://github.com/bsgriggs/tetris', '_blank');
-	}
+	// function clickTetris(){
+	// 	window.open('https://github.com/bsgriggs/tetris', '_blank');
+	// }
 
     return(
         <div className="Project">
 			<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
             <h3>Projects</h3>
 			<h4>Agriculture Technology Procurement</h4>
-			<div className="Row">
-				<div className="Gallery">
-					<ImageGallery items={atpGall} showThumbnails={false} showPlayButton={false} showFullscreenButton={false}/>
-				</div>
-				<p>Agriculture Technology Procurement (ATP) is a web application design for
-					Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
-					leased devices. <strong><a href="https://purdueatp-accp.mendixcloud.com">View ATP.</a></strong>
-				</p>
-			</div>
+			<ImageSlides contentArray={atpImages} direction={"Left"} />
 
 			<div className="Row">
 				<div className="Contributions">
@@ -94,15 +99,8 @@ const Project = () => {
 			</div>
 
 			<h4>Career Path Maker</h4>
-			<div className="Row">
-				<p>Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff
-					to plan their future careers within the university. <strong><a href="https://cpm.mendixcloud.com">View CPM.</a></strong>
-				</p>
-	
-				<div className="Gallery">
-					<ImageGallery items={atpGall} showThumbnails={false} showPlayButton={false} showFullscreenButton={false}/>
-				</div>
-			</div>
+			<ImageSlides contentArray={cpmImages} />
+
 			<div className="Row">
 				<div className="TechStack">
 					<h5>The CPM Tech Stack</h5>
@@ -127,14 +125,8 @@ const Project = () => {
 			</div>
 								
 			<h4>benjaminsgriggs.com</h4>
-			<div className="Row">
-				<div className="Gallery">
-					<ImageGallery items={atpGall} showThumbnails={false} showPlayButton={false} showFullscreenButton={false}/>
-				</div>
-				<p>This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
-					Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. <strong><a href="https://github.com/bsgriggs/benjodev-react">View BenJoDev.</a></strong>
-				</p>
-			</div>
+			<ImageSlides contentArray={bsgImages} direction={"Left"}/>
+
 			<h5>The benjaminsgriggs.com Tech Stack</h5>
 			<div className="rowImages">
 				<img alt="css logo" src={css}></img>
@@ -147,14 +139,8 @@ const Project = () => {
 			</div>
 			
 			<h4>Cost Distribution</h4>
-			<div className="Row">
-				<p>Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction 
-					projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="https://costdistribution100.mendixcloud.com/">View Cost Distribution.</a></strong>
-				</p>
-				<div className="Gallery">
-					<ImageGallery items={atpGall} showThumbnails={false} showPlayButton={false} showFullscreenButton={false}/>
-				</div>
-			</div>
+			<ImageSlides contentArray={costImages} />
+
 			<div className="Row">
 				<div className="Contributions">
 				<h5>Key Cost Distribution Contributions</h5>
@@ -179,14 +165,8 @@ const Project = () => {
 			</div>
 			
 			<h4>ASCII Tetris</h4>
-			<div className="Row">
-				<div className="Gallery">
-					<ImageGallery items={atpGall} showThumbnails={false} showPlayButton={false} showFullscreenButton={false}/>
-				</div>
-				<p> ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
-				the randomly selected blocks to be dropped. <strong><a href="https://github.com/bsgriggs/tetris">View ASCII Tetris.</a></strong>
-				</p>	
-			</div>
+			<ImageSlides contentArray={tetrisImages} direction={"Left"}/>
+
 			<div className="Row">
 				<div className="Contributions">
 				<h5>Key ASCII Tetris Contributions</h5>

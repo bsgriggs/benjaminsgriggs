@@ -1,6 +1,6 @@
 import React from 'react'
 import FramedImage from '../FramedImage'
-import professionalPic from '../../imgs/professionalPicTrim.jpg'
+import professionalPic from '../../imgs/professionalPicTrim.png'
 
 import mendix from '../../imgs/mendix.png'
 import java from '../../imgs/java.png'
@@ -10,7 +10,7 @@ import css from '../../imgs/css.png'
 import html from '../../imgs/html.png'
 import javascript from '../../imgs/javascript.png'
 import react from '../../imgs/React.png'
-import node from '../../imgs/nodejs.svg'
+import node from '../../imgs/nodejs.png'
 import git from '../../imgs/github.png'
 import oracle from '../../imgs/oracle.png'
 import postgresql from '../../imgs/PostgreSQL.png'
@@ -18,11 +18,11 @@ import windows from '../../imgs/windows.png'
 import raspberry from '../../imgs/raspberry.png'
 import ubuntu from '../../imgs/ubuntu.png'
 
-import atp from '../../imgs/atpHome.PNG'
-import cpm from '../../imgs/cpmHome.PNG'
-import fountain from '../../imgs/fountain.jpg'
-import cost from '../../imgs/costOverview.PNG'
-import tetris from '../../imgs/tetris.PNG'
+import atp from '../../imgs/Screenshots/atpHome.png'
+import cpm from '../../imgs/Screenshots/cpmHome.png'
+import fountain from '../../imgs/fountain.png'
+import cost from '../../imgs/Screenshots/costOverview.png'
+import tetris from '../../imgs/Screenshots/tetris.png'
 
 import './Home.css';
 

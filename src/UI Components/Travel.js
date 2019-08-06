@@ -25,29 +25,29 @@ import './Travel.css'
 const Travel = () => {
 
     const Turkey = [
-        {img: Alaçatı,caption: "Alaçatı",description:""},
-        {img: Bozcada,caption: "Bozcada",description:""},
-        {img: Çanakkale,caption: "Çanakkale",description:""},
-        {img: Çeşme,caption: "Çeşme",description:""},
-        {img: GalataTower,caption: "GalataTower",description:""},
-        {img: Gelibolu,caption: "Gelibolu",description:""},
-        {img: GülhanePark,caption: "GülhanePark",description:""},
-        {img: IstiklalCaddesi,caption: "IstiklalCaddesi",description:""},
-        {img: KapadokyaHouse,caption: "KapadokyaHouse",description:""},
-        {img: KapadokyaRange,caption: "KapadokyaRange",description:""},
-        {img: KazDağlarıCliff,caption: "KazDağlarıCliff",description:""},
-        {img: KazDağlarıRiver,caption: "KazDağlarıRiver",description:""},
-        {img: KazDağlarıStream,caption: "KazDağlarıStream",description:""},
-        {img: NearKuşadası,caption: "NearKuşadası",description:""},
-        {img: Pamukkale,caption: "Pamukkale",description:""},
-        {img: Theater,caption: "Theater",description:""},
-        {img: TopkapıPalace,caption: "TopkapıPalace",description:""},
-        {img: TuzGölü,caption: "TuzGölü",description:""},
-        {img: YerebatanSarnıcı,caption: "YerebatanSarnıcı",description:""},
+        {img: Alaçatı,caption: "Alaçatı",description:"Coming Soon"},
+        {img: Bozcada,caption: "Bozcada",description:"Coming Soon"},
+        {img: Çanakkale,caption: "Çanakkale",description:"Coming Soon"},
+        {img: Çeşme,caption: "Çeşme",description:"Coming Soon"},
+        {img: GalataTower,caption: "GalataTower",description:"Coming Soon"},
+        {img: Gelibolu,caption: "Gelibolu",description:"Coming Soon"},
+        {img: GülhanePark,caption: "GülhanePark",description:"Coming Soon"},
+        {img: IstiklalCaddesi,caption: "IstiklalCaddesi",description:"Coming Soon"},
+        {img: KapadokyaHouse,caption: "KapadokyaHouse",description:"Coming Soon"},
+        {img: KapadokyaRange,caption: "KapadokyaRange",description:"Coming Soon"},
+        {img: KazDağlarıCliff,caption: "KazDağlarıCliff",description:"Coming Soon"},
+        {img: KazDağlarıRiver,caption: "KazDağlarıRiver",description:"Coming Soon"},
+        {img: KazDağlarıStream,caption: "KazDağlarıStream",description:"Coming Soon"},
+        {img: NearKuşadası,caption: "NearKuşadası",description:"Coming Soon"},
+        {img: Pamukkale,caption: "Pamukkale",description:"Coming Soon"},
+        {img: Theater,caption: "Theater",description:"Coming Soon"},
+        {img: TopkapıPalace,caption: "TopkapıPalace",description:"Coming Soon"},
+        {img: TuzGölü,caption: "TuzGölü",description:"Coming Soon"},
+        {img: YerebatanSarnıcı,caption: "YerebatanSarnıcı",description:"Coming Soon"},
     ]
 
     return(
-        <div>
+        <div className="Travel">
             <h3>Turkey 2019</h3>
             <ImageSlides contentArray={Turkey}/>
         </div>

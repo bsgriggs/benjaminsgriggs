@@ -7,9 +7,8 @@
 	}
 
 	.rowImages img{
-		max-width: 30px;
-		max-height: 30px;
-		margin: 1vh 1vw;
+		width: 45px !important;
+		height: 45px !important; 
 	}
 
 	.Home p, .Home a{	font-size: calc(1vw + 10px) !important; text-align: center;}
@@ -19,6 +18,7 @@
 
 .rowImages img{
 	width: 8%;
+	margin: 1vw;
 }
 
 .Home h3{
