@@ -1,0 +1,39 @@
+@media only screen and (max-width: 700px) {
+    .slideRow {display: inline !important;}
+    .imageInstance{
+        width: 85vw !important;
+		transform: translateX(7%);
+    }
+    #discription{ 
+        width: 96% !important;
+    }
+}
+
+.imageInstance{
+    width: 45%;
+    position: relative;
+}
+
+.slideRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageInstance #btnL, .imageInstance #btnR{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: rotateY(-50%);
+    width: 7%;
+}  
+.imageInstance #btnL{ left: 5px; }
+.imageInstance #btnR{ right: 5px; }
+.imageInstance .NA{
+    opacity: 0;
+    z-index: -5;
+}
+
+#discription {
+    margin: 2vw;
+    width: 55%;
+}
