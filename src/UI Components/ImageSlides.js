@@ -1,7 +1,5 @@
 import React from 'react'
 import FramedImage from './FramedImage'
-import Left from '../imgs/Left.png'
-import Right from '../imgs/Right.png'
 import './ImageSlides.css'
 
 export class ImageSlides extends React.Component{
@@ -16,6 +14,7 @@ export class ImageSlides extends React.Component{
         this.indexLeft = this.indexLeft.bind(this);
         this.indexRight = this.indexRight.bind(this);
         this.setString = this.setString.bind(this);
+        this.fullscreen = this.fullscreen.bind(this);
     }
 
     setString(){
@@ -39,15 +38,21 @@ export class ImageSlides extends React.Component{
         this.forceUpdate();
     }
 
+    fullscreen(){
+        window.open(this.contentArray[this.index].img);
+    }
+
  	//trigger exact to behavior for NavLink Benjamin Griggs when a sub NavLink is active
   	render() {
         if(this.direction === "Left"){
             return(
                 <div className="slideRow" onLoad={this.setString}>
-                    <div className="imageInstance">
+                    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+                    <div className="imageInstance" >
                         <FramedImage image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
-                        <img id={"btnL"} src={Left} alt={"Left"} onClick={this.indexLeft} className={this.index === 0 ? 'NA' : ''}></img>
-                        <img id={"btnR"} src={Right} alt={"Right"} onClick={this.indexRight} className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}></img>
+                        <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
+                        <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
+                        <div className={"fullscreen"}><i onClick={this.fullscreen} className={"fas fa-2x fa-expand"}></i> </div>
                     </div>
                     <p id={"discription"}>{this.contentArray[this.index].description}</p>
                 </div>
@@ -55,11 +60,13 @@ export class ImageSlides extends React.Component{
         } else {
             return(
                 <div className="slideRow" onLoad={this.setString}>
+                    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
                     <p id={"discription"}>{this.contentArray[this.index].description}</p>
                     <div className="imageInstance">
-                        <FramedImage image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
-                        <img id={"btnL"} src={Left} alt={"Left"} onClick={this.indexLeft} className={this.index === 0 ? 'NA' : ''}></img>
-                        <img id={"btnR"} src={Right} alt={"Right"} onClick={this.indexRight} className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}></img>
+                        <FramedImage  image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
+                        <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
+                        <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
+                        <div className={"fullscreen"}><i onClick={this.fullscreen} className={"fas fa-2x fa-expand"}></i> </div>
                     </div>
                 </div>
             );

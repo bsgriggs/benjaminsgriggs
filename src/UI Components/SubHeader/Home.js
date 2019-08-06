@@ -21,6 +21,7 @@ import ubuntu from '../../imgs/ubuntu.png'
 import atp from '../../imgs/Screenshots/atpHome.png'
 import cpm from '../../imgs/Screenshots/cpmHome.png'
 import fountain from '../../imgs/fountain.png'
+import cookiesPile from '../../imgs/cookiesPile.png'
 import cost from '../../imgs/Screenshots/costOverview.png'
 import tetris from '../../imgs/Screenshots/tetris.png'
 
@@ -47,6 +48,9 @@ const About = () => {
 		window.open('https://github.com/bsgriggs/tetris', '_blank');
 	}
 
+	const cookies ={
+		width: '50%',
+	}
 
   return(
 		<div className="Home">
@@ -157,6 +161,9 @@ const About = () => {
 			
 			<h3>Contact</h3>
 			<h5>Contact is Comming Soon</h5>
+			<div style={cookies}>
+				<FramedImage image={cookiesPile} alt={"My Homemade Cookies"} caption={"My Homemade Cookies"} />
+			</div>
 		</div>
 	);
 }

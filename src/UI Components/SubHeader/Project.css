@@ -19,11 +19,6 @@
 	}
 }
 
-.rowImages img{
-	width: 8%;
-}
-
-
 .Contributions i{
 	margin: 0vh 1vw 0vh 0vw !important;
 	padding: 0 !important;
@@ -72,10 +67,6 @@
 
 .Project p{
 	font-size: calc(.9vw + 7.5px);
-	margin: 5vh 5vw;
-}
-
-.Project i{
 	margin: 5vh 5vw;
 }
 

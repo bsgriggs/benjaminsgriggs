@@ -3,13 +3,20 @@ import {ImageSlides} from '../ImageSlides'
 //ATP
 import atp from '../../imgs/Screenshots/atpHome.png'
 import atpOrder from '../../imgs/Screenshots/atpOrder.png'
+import atpPay from '../../imgs/Screenshots/atpPayment.png'
+import atpQuote from '../../imgs/Screenshots/atpQuoteLDAP.png'
 import atpDash from '../../imgs/Screenshots/atpDashboard.png'
 //CPM
 import cpm from '../../imgs/Screenshots/cpmHome.png'
+import cpmSearch from '../../imgs/Screenshots/cpmSearch.png'
+import cpmJob from '../../imgs/Screenshots/cpmJob.png'
+import cpmFileUtility from '../../imgs/Screenshots/cpmFileUtility.png'
+import cpmScheduledEvent from '../../imgs/Screenshots/cpmScheduledEvent.png'
 //benjaminsgriggs
 import fountain from '../../imgs/fountain.png'
 //cost
 import cost from '../../imgs/Screenshots/costOverview.png'
+import costEdit from '../../imgs/Screenshots/costEdit.png'
 //tetris
 import tetris from '../../imgs/Screenshots/tetris.png'
 
@@ -32,17 +39,24 @@ const Project = () => {
 
 	const atpImages = [
 		{ img: atp, caption:"Homepage",description:"Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices."},
-		{ img: atpDash, caption:"Homepage",description:""},
-		{ img: atpOrder, caption:"Homepage",description:""},
+		{ img: atpDash, caption:"ATP Order Statistics",description:""},
+		{ img: atpOrder, caption:"User Order Wizard",description:""},
+		{ img: atpQuote, caption:"Device Special Quote and LDAP",description:""},
+		{ img: atpPay, caption:"Account Allocation",description:""},
 	]
 	const cpmImages = [
 		{ img: cpm, caption:"Homepage",description:"Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff to plan their future careers within the university."},
+		{ img: cpmSearch, caption:"Search Criteria",description:""},
+		{ img: cpmJob, caption:"View Job",description:""},
+		{ img: cpmFileUtility, caption:"File Utilty",description:""},
+		{ img: cpmScheduledEvent, caption:"Scheduled Events",description:""},
 	]
 	const bsgImages = [
-		{ img: fountain, caption:"Purdue Engineering Fountain",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status."},
+		{ img: fountain, caption:"Purdue Engineering Fountain",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. \n \n Obviously, you can see what the webstie looks like, so here is a picture of the Purdue Engineering Fountatin by my Sister-in-Law Grace Griggs."},
 	]
 	const costImages = [
 		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me."},
+		{ img: costEdit, caption:"Edit Cost Plan",description:""},
 	]
 	const tetrisImages = [
 		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped."},
@@ -116,11 +130,10 @@ const Project = () => {
 				<div className="Contributions">
 					<h5>Key CPM Contributions</h5>
 					<h6><i className="fas fa-credit-card" ></i>Designed the Entire UI</h6>
-					<h6><i className="far fa-credit-card" ></i>Implimented Rest APIs and LDAP Queries</h6>
+					<h6><i className="far fa-credit-card" ></i>Developed Database Integration APIs</h6>
 					<h6><i className="fas fa-credit-card" ></i>Created the Application Framework</h6>
 					<h6><i className="far fa-credit-card" ></i>Crafted the Application Database</h6>
-					<h6><i className="fas fa-credit-card" ></i>Developed Email Code for Order Statuses</h6>
-					<h6><i className="far fa-credit-card" ></i>Designed a Database Statistics Dashboard</h6>
+					<h6><i className="fas fa-credit-card" ></i>Implimented Scheduled Database I/O</h6>
 				</div>
 			</div>
 								
@@ -144,12 +157,10 @@ const Project = () => {
 			<div className="Row">
 				<div className="Contributions">
 				<h5>Key Cost Distribution Contributions</h5>
-					<h6><i className="fas fa-credit-card" ></i>Designed the Entire UI</h6>
-					<h6><i className="far fa-credit-card" ></i>Implimented Rest APIs and LDAP Queries</h6>
-					<h6><i className="fas fa-credit-card" ></i>Created the Application Framework</h6>
-					<h6><i className="far fa-credit-card" ></i>Crafted the Application Database</h6>
-					<h6><i className="fas fa-credit-card" ></i>Developed Email Code for Order Statuses</h6>
-					<h6><i className="far fa-credit-card" ></i>Designed a Database Statistics Dashboard</h6>
+					<h6><i className="fas fa-credit-card" ></i>Consulted PDF Report Generation</h6>
+					<h6><i className="far fa-credit-card" ></i>Supported Production Applcation</h6>
+					<h6><i className="fas fa-credit-card" ></i>Managed Production Database Errors</h6>
+					<h6><i className="far fa-credit-card" ></i>Implimented RESTful APIs for Reporting</h6>
 				</div>
 				<div className="TechStack">
 					<h5>The Cost Distribution Tech Stack</h5>
@@ -170,12 +181,10 @@ const Project = () => {
 			<div className="Row">
 				<div className="Contributions">
 				<h5>Key ASCII Tetris Contributions</h5>
-					<h6><i className="fas fa-credit-card" ></i>Designed the Entire UI</h6>
-					<h6><i className="far fa-credit-card" ></i>Implimented Rest APIs and LDAP Queries</h6>
-					<h6><i className="fas fa-credit-card" ></i>Created the Application Framework</h6>
-					<h6><i className="far fa-credit-card" ></i>Crafted the Application Database</h6>
-					<h6><i className="fas fa-credit-card" ></i>Developed Email Code for Order Statuses</h6>
-					<h6><i className="far fa-credit-card" ></i>Designed a Database Statistics Dashboard</h6>
+					<h6><i className="fas fa-cubes" ></i>Designed the Entire User Interface</h6>
+					<h6><i className="fas fa-cubes" ></i>Implimented Structured Queues for Blocks</h6>
+					<h6><i className="fas fa-cubes" ></i>Developed User Input Handling</h6>
+					<h6><i className="fas fa-cubes" ></i>Implimented Random Block Picker</h6>
 				</div>
 				<div className="TechStack">
 					<h5>The ASCII Tetris Tech Stack</h5>
