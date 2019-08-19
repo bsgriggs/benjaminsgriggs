@@ -1,12 +1,13 @@
 import React from 'react'
 import FramedImage from '../UI Components/FramedImage'
+import Contact from '../UI Components/SubHeader/Contact'
 import './Minecraft.css'
 import minecraft from '../imgs/minecraft.png'
 import $ from 'jquery';
 
 const Minecraft = () => {
     function checkStatus(){
-        $.getJSON('https://api.mcsrvstat.us/1/benjodev.com', function(status) {
+        $.getJSON('https://api.mcsrvstat.us/1/benjaminsgriggs.com', function(status) {
             if (status.debug.ping === false){
                 $("#left").html('<i class="far fa-times-circle" style="color:red"></i>    '+status.hostname+'<br><br>('+status.ip+':'+status.port+')');
                 $("#right").html('<i class="far fa-user" style="color:#a663f2"></i>   The Minecraft Server is Offline.');
@@ -43,7 +44,7 @@ const Minecraft = () => {
                 </div>
             </div>
             <h3>How to Join</h3>
-            <h5>How to Join is Comming Soon</h5>
+            <Contact />
         </div>
     );
 }

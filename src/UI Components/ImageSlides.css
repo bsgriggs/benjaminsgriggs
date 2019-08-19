@@ -33,6 +33,7 @@
 .imageInstance .NA{
     opacity: 0;
     z-index: -5;
+    cursor: none;
 }
 
 .fullscreen{
