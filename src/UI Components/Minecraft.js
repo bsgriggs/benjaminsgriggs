@@ -1,6 +1,6 @@
 import React from 'react'
 import FramedImage from '../UI Components/FramedImage'
-import Contact from '../UI Components/SubHeader/Contact'
+import ContactInfo from '../UI Components/ContactInfo'
 import './Minecraft.css'
 import minecraft from '../imgs/minecraft.png'
 import $ from 'jquery';
@@ -44,7 +44,7 @@ const Minecraft = () => {
                 </div>
             </div>
             <h3>How to Join</h3>
-            <Contact />
+            <ContactInfo />
         </div>
     );
 }

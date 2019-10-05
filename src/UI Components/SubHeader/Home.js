@@ -1,7 +1,7 @@
 import React from 'react'
 import FramedImage from '../FramedImage'
 import professionalPic from '../../imgs/professionalPicTrim.png'
-import Contact from '../SubHeader/Contact'
+import ContactInfo from '../ContactInfo'
 
 import mendix from '../../imgs/mendix.png'
 import java from '../../imgs/java.png'
@@ -163,7 +163,7 @@ const About = () => {
 			<h3>Contact</h3>
 			<div className="Row">
 				<div style={cookies}>
-					<Contact />
+					<ContactInfo />
 				</div>				
 				<div style={cookies}>
 					<FramedImage image={cookiesPile} alt={"My Homemade Cookies"} caption={"My Homemade Cookies"} />
