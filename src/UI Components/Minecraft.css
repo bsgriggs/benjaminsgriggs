@@ -1,6 +1,4 @@
 @media only screen and (max-width: 700px) {
-	.Row{ display: inline !important;}
-
 	.minecraft p, .minecraft a{	font-size: calc(1vw + 10px) !important; text-align: center;}
 	.minecraft h5{font-size: calc(1vw + 11px) !important;}
 	.minecraft h3{font-size: calc(1vw + 20px) !important;}
@@ -32,14 +30,6 @@
     font-size: calc(.9vw + 7.5px);
     margin: 0vh 2vw;
     text-align: center;
-}
-
-.minecraft h3{
-	text-align: center;
-	border-bottom-style: groove;
-	width: 50%;
-	transform: translateX(50%);
-	font-size: calc(1vw + 20px);
 }
 
 .minecraft .mineImg{

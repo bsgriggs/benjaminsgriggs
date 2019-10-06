@@ -1,6 +1,22 @@
 @media only screen and (max-width: 700px) {
-    .Travel h3, .Travel p{text-align: center;}
+    .Travel p{text-align: center;}
+    .TravelRow{ 
+		justify-content: space-around !important;
+		flex-wrap: wrap !important;
+	}
+	.TravelRow div{
+		width: 85vw !important;
+    }
+    .Travel1x1{ width: 85vw !important;}
+    .Travel4x3{ width: 85vw !important;}
 }
-.Travel h3{
-    margin: 2vw;
+
+.Travel1x1{ width: 40vw; margin: 1vh 1vw;}
+.Travel4x3{ width: 40vw; margin: 1vh 1vw;}
+
+.TravelRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }

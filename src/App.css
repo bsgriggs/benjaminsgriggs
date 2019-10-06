@@ -1,25 +1,96 @@
+@media only screen and (max-width: 700px) {
+	.Row{ 
+		justify-content: space-around !important;
+		flex-wrap: wrap !important;
+	}
+	.Row div{
+		width: 85vw !important;
+	}
+	p, a{	font-size: calc(1vw + 10px) !important; text-align: center;}
+
+	h1{ font-size: calc(1vw + 28px)!important;}
+	h2{ font-size: calc(1vw + 25px)!important;}
+	h3{ font-size: calc(1vw + 22px)!important;}
+	h4{	font-size: calc(1vw + 17px)!important;}
+	h5{	font-size: calc(1vw + 12px)!important;}
+	h6{	font-size: calc(1vw + 7px)!important;}
+
+	.Img1x1_Large{ width: 85vw !important;}
+	.Img16x9 { width: 85vw !important;}
+	.Img1x1_Small {	width: 85vw !important;}
+	.Img4x3{ width: 85vw !important;}
+}
 .App {
+	margin-top: 105px;
 }
 
 html {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	background-color: #fdfbfb;
 }
 
 .Row{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
+.rowImages img{
+	width: 7%;
+	height: 7%;
+	margin: 1vw;
+}
 .rowImages{
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 5vh;
 }
 
-.lrgImg{width: 110vw;}
-.medImg{width: 100vw;}
-.smlImg{width: 90vw;}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+	margin-bottom: 1vh;
+}
 
-.lrgImg p,.medImg p,.smlImg p{
-  font-size: calc(.9vw + 7.5px);
-	margin: 0;
+h1{ font-size: calc(.75vw + 26px);}
+h2{ font-size: calc(.75vw + 23px);}
+h3{ font-size: calc(.75vw + 20px);}
+h4{	font-size: calc(.75vw + 15px);}
+h5{	font-size: calc(.75vw + 10px);}
+h6{	font-size: calc(.75vw + 5px);}
+
+
+p a{
+	color: #98700D;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+p a:hover{
+	color: #C28E0E;
+	text-decoration: underline;
+}
+
+hr{
+	width: 70%;
+	border: 2px solid #65379B;
+}
+
+.Img1x1_Large{ width: 32vw;}
+.Img16x9 { width: 40vw;}
+.Img1x1_Small {	width: 25vw;}
+.Img4x3{ width: 32vw;}
+
+i{
+	color: #65379B;
+}
+
+.Clickable{
+    cursor: pointer;
+	width: inherit;
+}
+
+.notClickable{
+    cursor: default;
+    width: inherit;
 }

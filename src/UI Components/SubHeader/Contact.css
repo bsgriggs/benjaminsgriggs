@@ -1,0 +1,30 @@
+.Contact p {
+    margin: 5vh 5vw;
+}
+
+.Contact .MediaImages{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Contact .MediaImages img{
+    width: 13%;
+    height: auto;
+}
+
+.Contact .ContactInfo {
+    width: 50%;
+    text-align: center;
+}
+
+.Contact .ContactInfo .emailLink{
+    cursor: pointer;
+}
+
+.Contact .emailLink i:hover{
+    transition: .5s ease-out;
+    color: #6457C6;
+}

@@ -1,14 +1,11 @@
 @media only screen and (max-width: 700px) {
-    .up{
-        transform: translateY(49px) !important;
-        transition: ease .7s !important;
-    }
+    .up{ top:50px !important; transition: ease .5s !important; width: 100% !important;}
     
-    .down {transform: translateY(49px) !important;}
+    .down {top:50px !important; width: 100% !important;}
     
     a{font-size: calc(1vw + 9px)!important;}
     
-    .Slider{width:100%!important; transition: ease .7s !important;}
+    .Slider{width:100%!important; transition: ease .5s !important;}
 
     .Navbar img {
         margin: .5vh 0vw 0vh 1vw !important;
@@ -31,6 +28,9 @@
     height: 50px;
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
     transform: translateY(-40px);
+    top: 40px;
+    position: fixed;
+    z-index: 900;
 }
 
 .Navbar img {
@@ -40,7 +40,7 @@
     width: 30vw;
 }
 
-.Navbar a {
+.Navbar a{
     font-size: calc(.9vw + 7.5px);
     font-weight: bold;
     color: white;
@@ -84,7 +84,6 @@
     display: flex;
     flex-direction: row;
     color: white;
-    width: 75%;
     height: 40px;
     background-image: linear-gradient(to right, #434343 0%, black 75%);
     opacity: .85;
@@ -121,11 +120,21 @@
 }
 
 .up{
-    transform: translateY(5px);
-    transition: ease .7s;
+    top:-40px;
+    position: fixed;
+    z-index: 850;
+    transition: ease .5s;
+    width: 75%;
 }
 
 .down {
-    transition: ease .7s;
-    transform: translateY(49px);
+    top:50px;
+    position: fixed;
+    z-index: 850;
+    transition: ease .5s;
+    width: 75%;
+}
+.Navbar i{
+    margin-left: 10px;
+    color: #fff;
 }

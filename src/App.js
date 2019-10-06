@@ -13,6 +13,7 @@ export class App extends React.Component{
 	render(){
 		return(
 			<BrowserRouter>
+				<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"/>
 				<Route path='/' component={Navbar} />
 				<div className="App">
 					<Route exact path='/' component={Home} />

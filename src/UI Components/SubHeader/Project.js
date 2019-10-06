@@ -1,37 +1,35 @@
 import React from 'react'
 import {ImageSlides} from '../ImageSlides'
 //ATP
-import atp from '../../imgs/Screenshots/atpHome.png'
-import atpOrder from '../../imgs/Screenshots/atpOrder.png'
-import atpPay from '../../imgs/Screenshots/atpPayment.png'
-import atpQuote from '../../imgs/Screenshots/atpQuoteLDAP.png'
-import atpDash from '../../imgs/Screenshots/atpDashboard.png'
+import atp from '../../imgs/Screenshots/atpHome.jpg'
+import atpOrder from '../../imgs/Screenshots/atpOrder.jpg'
+import atpEmail from '../../imgs/Screenshots/atpEmail.jpg'
+import atpQuote from '../../imgs/Screenshots/atpQuoteLDAP.jpg'
+import atpDash from '../../imgs/Screenshots/atpDashboard.jpg'
 //CPM
-import cpm from '../../imgs/Screenshots/cpmHome.png'
-import cpmSearch from '../../imgs/Screenshots/cpmSearch.png'
-import cpmJob from '../../imgs/Screenshots/cpmJob.png'
-import cpmFileUtility from '../../imgs/Screenshots/cpmFileUtility.png'
-import cpmScheduledEvent from '../../imgs/Screenshots/cpmScheduledEvent.png'
+import cpm from '../../imgs/Screenshots/cpmHome.jpg'
+import cpmSearch from '../../imgs/Screenshots/cpmSearch.jpg'
+import cpmJob from '../../imgs/Screenshots/cpmJob.jpg'
+import cpmScheduledEvent from '../../imgs/Screenshots/cpmScheduledEvent.jpg'
 //benjaminsgriggs
-import fountain from '../../imgs/fountain.png'
+import benjaminsgriggs from '../../imgs/Screenshots/benjaminsgriggs.jpg'
 //cost
-import cost from '../../imgs/Screenshots/costOverview.png'
-import costEdit from '../../imgs/Screenshots/costEdit.png'
+import cost from '../../imgs/Screenshots/costHome.jpg'
 //tetris
-import tetris from '../../imgs/Screenshots/tetris.png'
+import tetris from '../../imgs/Screenshots/tetris.jpg'
 
-import mendix from '../../imgs/mendix.png'
-import java from '../../imgs/java.png'
-import c from '../../imgs/c.png'
-import css from '../../imgs/css.png'
-import html from '../../imgs/html.png'
-import javascript from '../../imgs/javascript.png'
-import react from '../../imgs/React.png'
-import node from '../../imgs/nodejs.png'
-import postgresql from '../../imgs/PostgreSQL.png'
-import git from '../../imgs/github.png'
-import raspberry from '../../imgs/raspberry.png'
-import ubuntu from '../../imgs/ubuntu.png'
+import mendix from '../../imgs/mendix.jpg'
+import java from '../../imgs/java.jpg'
+import c from '../../imgs/c.jpg'
+import css from '../../imgs/css.jpg'
+import html from '../../imgs/html.jpg'
+import javascript from '../../imgs/javascript.jpg'
+import react from '../../imgs/React.jpg'
+import node from '../../imgs/nodejs.jpg'
+import postgresql from '../../imgs/PostgreSQL.jpg'
+import git from '../../imgs/github.jpg'
+import raspberry from '../../imgs/raspberry.jpg'
+import ubuntu from '../../imgs/ubuntu.jpg'
 
 import './Project.css'
 
@@ -42,21 +40,19 @@ const Project = () => {
 		{ img: atpDash, caption:"ATP Order Statistics",description:""},
 		{ img: atpOrder, caption:"User Order Wizard",description:""},
 		{ img: atpQuote, caption:"Device Special Quote and LDAP",description:""},
-		{ img: atpPay, caption:"Account Allocation",description:""},
+		{ img: atpEmail, caption:"Sample Email Report",description:""},
 	]
 	const cpmImages = [
 		{ img: cpm, caption:"Homepage",description:"Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff to plan their future careers within the university."},
 		{ img: cpmSearch, caption:"Search Criteria",description:""},
 		{ img: cpmJob, caption:"View Job",description:""},
-		{ img: cpmFileUtility, caption:"File Utilty",description:""},
 		{ img: cpmScheduledEvent, caption:"Scheduled Events",description:""},
 	]
 	const bsgImages = [
-		{ img: fountain, caption:"Purdue Engineering Fountain",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. \n \n Obviously, you can see what the webstie looks like, so here is a picture of the Purdue Engineering Fountatin by my Sister-in-Law Grace Griggs."},
+		{ img: benjaminsgriggs, caption:"This Homepage",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status."},
 	]
 	const costImages = [
 		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me."},
-		{ img: costEdit, caption:"Edit Cost Plan",description:""},
 	]
 	const tetrisImages = [
 		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped."},
@@ -84,14 +80,14 @@ const Project = () => {
 
     return(
         <div className="Project">
-			<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
-            <h3>Projects</h3>
-			<h4>Agriculture Technology Procurement</h4>
+			<h3>Agriculture Technology Procurement</h3>
+			<hr></hr>
 			<ImageSlides contentArray={atpImages} direction={"Left"} />
-
+			
 			<div className="Row">
 				<div className="Contributions">
-					<h5>Key ATP Contributions</h5>
+					<h5>Key Contributions</h5>
+					<hr></hr>
 					<h6><i className="fas fa fa-laptop" ></i>Designed the Entire UI</h6>
 					<h6><i className="fas fa fa-desktop" ></i>Implimented Rest APIs and LDAP Queries</h6>
 					<h6><i className="fas fa fa-laptop" ></i>Created the Application Framework</h6>
@@ -101,6 +97,7 @@ const Project = () => {
 				</div>
 				<div className="TechStack">
 					<h5>The ATP Tech Stack</h5>
+					<hr></hr>
 					<div className="rowImages">
 						<img alt="mendix logo" src={mendix}></img>
 						<img alt="java logo" src={java}></img>
@@ -112,12 +109,14 @@ const Project = () => {
 				</div>
 			</div>
 
-			<h4>Career Path Maker</h4>
+			<h3>Career Path Maker</h3>
+			<hr></hr>
 			<ImageSlides contentArray={cpmImages} />
 
 			<div className="Row">
 				<div className="TechStack">
 					<h5>The CPM Tech Stack</h5>
+					<hr></hr>
 					<div className="rowImages">
 						<img alt="mendix logo" src={mendix}></img>
 						<img alt="java logo" src={java}></img>
@@ -128,7 +127,8 @@ const Project = () => {
 					</div>	
 				</div>
 				<div className="Contributions">
-					<h5>Key CPM Contributions</h5>
+					<h5>Key Contributions</h5>
+					<hr></hr>
 					<h6><i className="fas fa-credit-card" ></i>Designed the Entire UI</h6>
 					<h6><i className="far fa-credit-card" ></i>Developed Database Integration APIs</h6>
 					<h6><i className="fas fa-credit-card" ></i>Created the Application Framework</h6>
@@ -137,10 +137,12 @@ const Project = () => {
 				</div>
 			</div>
 								
-			<h4>benjaminsgriggs.com</h4>
-			<ImageSlides contentArray={bsgImages} direction={"Left"}/>
+			<h3>benjaminsgriggs.com</h3>
+			<hr></hr>
+			<ImageSlides contentArray={bsgImages} direction={"Left"} />
 
 			<h5>The benjaminsgriggs.com Tech Stack</h5>
+			<hr id="small"></hr>
 			<div className="rowImages">
 				<img alt="css logo" src={css}></img>
 				<img alt="html logo" src={html}></img>
@@ -151,12 +153,14 @@ const Project = () => {
 				<img alt="github logo" src={git}></img>
 			</div>
 			
-			<h4>Cost Distribution</h4>
+			<h3>Cost Distribution</h3>
+			<hr></hr>
 			<ImageSlides contentArray={costImages} />
 
 			<div className="Row">
 				<div className="Contributions">
-				<h5>Key Cost Distribution Contributions</h5>
+				<h5>Key Contributions</h5>
+				<hr></hr>
 					<h6><i className="fas fa-credit-card" ></i>Consulted PDF Report Generation</h6>
 					<h6><i className="far fa-credit-card" ></i>Supported Production Applcation</h6>
 					<h6><i className="fas fa-credit-card" ></i>Managed Production Database Errors</h6>
@@ -164,6 +168,7 @@ const Project = () => {
 				</div>
 				<div className="TechStack">
 					<h5>The Cost Distribution Tech Stack</h5>
+					<hr></hr>
 					<div className="rowImages">
 						<img alt="mendix logo" src={mendix}></img>
 						<img alt="java logo" src={java}></img>
@@ -175,12 +180,14 @@ const Project = () => {
 				</div>
 			</div>
 			
-			<h4>ASCII Tetris</h4>
-			<ImageSlides contentArray={tetrisImages} direction={"Left"}/>
+			<h3>ASCII Tetris</h3>
+			<hr></hr>
+			<ImageSlides contentArray={tetrisImages} direction={"Left"} />
 
 			<div className="Row">
 				<div className="Contributions">
-				<h5>Key ASCII Tetris Contributions</h5>
+				<h5>Key Contributions</h5>
+				<hr></hr>
 					<h6><i className="fas fa-cubes" ></i>Designed the Entire User Interface</h6>
 					<h6><i className="fas fa-cubes" ></i>Implimented Structured Queues for Blocks</h6>
 					<h6><i className="fas fa-cubes" ></i>Developed User Input Handling</h6>
@@ -188,6 +195,7 @@ const Project = () => {
 				</div>
 				<div className="TechStack">
 					<h5>The ASCII Tetris Tech Stack</h5>
+					<hr></hr>
 					<div className="rowImages">
 						<img alt="c logo" src={c}></img>
 						<img alt="github logo" src={git}></img>

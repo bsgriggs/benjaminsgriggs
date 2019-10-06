@@ -1,58 +1,10 @@
 @media only screen and (max-width: 700px) {
-	.Row{ display: inline !important;}
-
-	.lrgImg,.medImg,.smlImg{ 
-		width: 85vw !important;
-		transform: translateX(7%);
-	}
-
 	.rowImages img{
 		width: 45px !important;
 		height: 45px !important; 
 	}
-
-	.Home p, .Home a{	font-size: calc(1vw + 10px) !important; text-align: center;}
-	.Home h5{font-size: calc(1vw + 11px) !important;}
-	.Home h3{font-size: calc(1vw + 20px) !important;}
-}
-
-.rowImages img{
-	width: 7%;
-	margin: 1vw;
-}
-
-.Home h3{
-	text-align: center; 
-	border-bottom-style: groove;
-	font-size: calc(1vw + 20px);
-	transform: translateX(50%);
-	width: 50%;
-}
-
-.Home h5{
-	text-align: center;
-	font-size: calc(1vw + 11px);
-	line-height: 0;
 }
 
 .Home p{
-	font-size: calc(.9vw + 7.5px);
 	margin: 5vh 5vw;
-}
-
-.Home i{
-	color: #65379B;
-	margin: 5vh 5vw;
-}
-
-.Home p a{
-	color: #98700D;
-	text-decoration: none;
-	cursor: pointer;
-	font-size: calc(.9vw + 7.5px);
-}
-
-.Home p a:hover{
-	color: #C28E0E;
-	text-decoration: underline;
 }

@@ -1,22 +1,13 @@
 @media only screen and (max-width: 700px) {
-    .slideRow {display: inline !important;}
-    .imageInstance{
-        width: 85vw !important;
-		transform: translateX(7%);
-    }
     #discription{ 
         width: 96% !important;
     }
+    .fullscreen{width: min-content !important; margin-left: auto;}
 }
 
 .imageInstance{
-    width: 45%;
     position: relative;
-}
-
-.slideRow{
-    display: flex;
-    justify-content: space-between;
+    width: inherit;
 }
 
 .imageInstance #btnL, .imageInstance #btnR{
@@ -32,7 +23,7 @@
 .imageInstance #btnR{ right: 5px; }
 .imageInstance .NA{
     opacity: 0;
-    z-index: -5;
+    z-index: -5555;
     cursor: none;
 }
 
@@ -47,6 +38,5 @@
 }
 
 #discription {
-    margin: 2vw;
-    width: 55%;
+    margin: 5vh 5vw;
 }
