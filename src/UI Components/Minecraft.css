@@ -1,37 +1,15 @@
 @media only screen and (max-width: 700px) {
-	.minecraft p, .minecraft a{	font-size: calc(1vw + 10px) !important; text-align: center;}
-	.minecraft h5{font-size: calc(1vw + 11px) !important;}
-	.minecraft h3{font-size: calc(1vw + 20px) !important;}
-
-    .minecraft .mineImg{
-        width: 70vw !important;
-        transform: translateX(20%);
-    }
-
-    .minecraft .Row #left,.minecraft .Row #right, .minecraft .Row #center{
-        font-size: calc(1vw + 10px) !important;
+    .minecraft .Row #left,.minecraft .Row #right{
         margin: 5vh 5vw !important;
+        font-size: calc(1vw + 10px) !important;
     }
 }
 
-.minecraft .content{
-    display: flex;
-    justify-content: space-between;
-}
-
-.minecraft .status{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5vh 0vw 0vh 5vw;
-    width: 65vw;
-}
-
-.minecraft .Row #left,.minecraft .Row #right, .minecraft .Row #center{
-    font-size: calc(.9vw + 7.5px);
-    margin: 0vh 2vw;
+.minecraft .Row #left,.minecraft .Row #right{
+    margin: 0vh 3vw;
     text-align: center;
 }
-
-.minecraft .mineImg{
-    width: 35vw;
+.minecraft .Row #center{
+    text-align: center;
+    margin: 1vh 1vw;
 }

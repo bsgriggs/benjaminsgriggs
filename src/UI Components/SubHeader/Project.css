@@ -32,3 +32,10 @@
 .Project p{
 	margin: 2vh 3vw;
 }
+.linkContainer{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.linkContainer p {
+	margin: 0;
+}

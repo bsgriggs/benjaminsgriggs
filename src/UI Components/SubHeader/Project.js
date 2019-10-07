@@ -64,32 +64,21 @@ const Project = () => {
 		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris was a fun class project developed to run in a linux terminal and expand our understanding of C data structures. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped. Essentially, the program intially fills a queue of 5 blocks randomly. Then, the program dequeues the block and adds it to the top of the interface and randomly selects another block to add to the queue.\nAlso, the program includes weighted scoring. The higher level the play is in the game, the more points they receive for a line clear."},
 	]
 
-	// function clickATP(){
-	// 	window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
-	// }
-
-	// function clickCPM(){
-	// 	window.open('https://cpm.mendixcloud.com', '_blank');
-	// }
-
-	// function clickBenJo(){
-	// 	window.open('https://github.com/bsgriggs/benjodev-react', '_blank');
-	// }
-
-	// function clickCost(){
-	// 	window.open('https://costdistribution100.mendixcloud.com/', '_blank');
-	// }
-
-	// function clickTetris(){
-	// 	window.open('https://github.com/bsgriggs/tetris', '_blank');
-	// }
+	const atpURL = 'https://purdueatp-accp.mendixcloud.com/';
+	const cpmURL = 'https://cpm.mendixcloud.com/';
+	const bsgURL = 'https://github.com/bsgriggs/benjaminsgriggs/';
+	const cstURL = 'https://costdistribution100.mendixcloud.com/';
+	const trsURL = 'https://github.com/bsgriggs/tetris/';
 
     return(
         <div className="Project">
 			<h3>Agriculture Technology Procurement</h3>
 			<hr></hr>
+			<div className="linkContainer">
+				<p>Requires Purdue Login</p>
+				<strong><a href={atpURL} target="_blank" rel="noopener noreferrer">{atpURL}</a></strong>
+			</div>
 			<ImageSlides contentArray={atpImages} direction={"Left"} imageStyle={Img16x9} />
-			
 			<div className="Row">
 				<div className="Contributions">
 					<h5>Key Contributions</h5>
@@ -117,6 +106,10 @@ const Project = () => {
 
 			<h3>Career Path Maker</h3>
 			<hr></hr>
+			<div className="linkContainer">
+				<p>Public Site</p>
+				<strong><a href={cpmURL} target="_blank" rel="noopener noreferrer">{cpmURL}</a></strong>
+			</div>
 			<ImageSlides contentArray={cpmImages} imageStyle={Img16x9} />
 
 			<div className="Row">
@@ -145,6 +138,10 @@ const Project = () => {
 								
 			<h3>benjaminsgriggs.com</h3>
 			<hr></hr>
+			<div className="linkContainer">
+				<p>Source Code</p>
+				<strong><a href={bsgURL} target="_blank" rel="noopener noreferrer">{bsgURL}</a></strong>
+			</div>
 			<ImageSlides contentArray={bsgImages} direction={"Left"} imageStyle={Img16x9} />
 
 			<h5>The benjaminsgriggs.com Tech Stack</h5>
@@ -161,6 +158,10 @@ const Project = () => {
 			
 			<h3>Cost Distribution</h3>
 			<hr></hr>
+			<div className="linkContainer">
+				<p>Requires Purdue Login</p>
+				<strong><a href={cstURL} target="_blank" rel="noopener noreferrer">{cstURL}</a></strong>
+			</div>
 			<ImageSlides contentArray={costImages} imageStyle={Img16x9}/>
 
 			<div className="Row">
@@ -188,6 +189,10 @@ const Project = () => {
 			
 			<h3>ASCII Tetris</h3>
 			<hr></hr>
+			<div className="linkContainer">
+				<p>Source Code</p>
+				<strong><a href={trsURL} target="_blank" rel="noopener noreferrer">{trsURL}</a></strong>
+			</div>
 			<ImageSlides contentArray={tetrisImages} direction={"Left"} imageStyle={Img1x1}/>
 
 			<div className="Row">
