@@ -1,8 +1,8 @@
 import React from 'react'
 import './Contact.css'
-import FramedImage from '../FramedImage'
+// import FramedImage from '../FramedImage'
 
-import cookiePile from '../../imgs/cookiesPile.jpg'
+// import cookiePile from '../../imgs/cookiesPile.jpg'
 
 import LinkedIn from '../../imgs/linkedin.jpg'
 import Facebook from '../../imgs/facebook.jpg'
@@ -52,7 +52,7 @@ const Contact = () => {
                     <img className="Clickable" alt="GitHub" src={GitHub} onClick={github}></img>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <h3>Cookies!</h3>
                 <hr></hr>
                 <div className="Row">
@@ -64,7 +64,7 @@ const Contact = () => {
                         <h4>Procedure</h4>
                     </div>	
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

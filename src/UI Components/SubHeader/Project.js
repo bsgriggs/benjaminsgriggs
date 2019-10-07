@@ -34,10 +34,16 @@ import ubuntu from '../../imgs/ubuntu.jpg'
 import './Project.css'
 
 const Project = () => {
+	const Img16x9 = {
+		width: '40vw'
+	}
+	const Img1x1 = {
+		width: '25vw'
+	}
 
 	const atpImages = [
-		{ img: atp, caption:"Homepage",description:"Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices."},
-		{ img: atpDash, caption:"ATP Order Statistics",description:""},
+		{ img: atp, caption:"Homepage",description:"Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices.\nHere you can see the homepage for the standard user role. I designed the interface to use these Purdue themed cards in the menus. As you can see under `MyOrders`, the cards have the ability to display information - like warnings - related to the menu. Updates for the user will show in green while warnings will show in red. For example, the number of orders that required action now will show in red."},
+		{ img: atpDash, caption:"ATP Order Statistics",description:"Our users required the ability to see the status of the application at a glance. As ordering software, this includes the provided graphs of each Order Status as well as many others.\nThese graphs include the aforementioned red warnings. However, these warnings inform our users of the number of orders that have been in that status for 7 days or more. This way, they can track down orders that should have progressed by now. This particular, acceptance data set has several warnings for testing purposes."},
 		{ img: atpOrder, caption:"User Order Wizard",description:""},
 		{ img: atpQuote, caption:"Device Special Quote and LDAP",description:""},
 		{ img: atpEmail, caption:"Sample Email Report",description:""},
@@ -49,13 +55,13 @@ const Project = () => {
 		{ img: cpmScheduledEvent, caption:"Scheduled Events",description:""},
 	]
 	const bsgImages = [
-		{ img: benjaminsgriggs, caption:"This Homepage",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status."},
+		{ img: benjaminsgriggs, caption:"This Homepage",description:"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status.\nGiven that you can already see the entirety of the project, it doesn't make sense to provide many screenshots. If you have any questions or feedback, then refer to the Feedback page."},
 	]
 	const costImages = [
-		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me."},
+		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me.\nIn one case, one of the application's administrators had deleted a user from the database that no longer worked for Purdue. This resulted in the system being unable to retieve any objects tied to the former account. After I identified this mistake, I used a backup and some SQL commands to `stitch` together the missing data and restore the system to operation.\nDue to security concerns, I am unable to provide any more detailed screenshots."},
 	]
 	const tetrisImages = [
-		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped."},
+		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris was a fun class project developed to run in a linux terminal and expand our understanding of C data structures. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped. Essentially, the program intially fills a queue of 5 blocks randomly. Then, the program dequeues the block and adds it to the top of the interface and randomly selects another block to add to the queue.\nAlso, the program includes weighted scoring. The higher level the play is in the game, the more points they receive for a line clear."},
 	]
 
 	// function clickATP(){
@@ -82,7 +88,7 @@ const Project = () => {
         <div className="Project">
 			<h3>Agriculture Technology Procurement</h3>
 			<hr></hr>
-			<ImageSlides contentArray={atpImages} direction={"Left"} />
+			<ImageSlides contentArray={atpImages} direction={"Left"} imageStyle={Img16x9} />
 			
 			<div className="Row">
 				<div className="Contributions">
@@ -111,7 +117,7 @@ const Project = () => {
 
 			<h3>Career Path Maker</h3>
 			<hr></hr>
-			<ImageSlides contentArray={cpmImages} />
+			<ImageSlides contentArray={cpmImages} imageStyle={Img16x9} />
 
 			<div className="Row">
 				<div className="TechStack">
@@ -139,7 +145,7 @@ const Project = () => {
 								
 			<h3>benjaminsgriggs.com</h3>
 			<hr></hr>
-			<ImageSlides contentArray={bsgImages} direction={"Left"} />
+			<ImageSlides contentArray={bsgImages} direction={"Left"} imageStyle={Img16x9} />
 
 			<h5>The benjaminsgriggs.com Tech Stack</h5>
 			<hr id="small"></hr>
@@ -155,7 +161,7 @@ const Project = () => {
 			
 			<h3>Cost Distribution</h3>
 			<hr></hr>
-			<ImageSlides contentArray={costImages} />
+			<ImageSlides contentArray={costImages} imageStyle={Img16x9}/>
 
 			<div className="Row">
 				<div className="Contributions">
@@ -182,7 +188,7 @@ const Project = () => {
 			
 			<h3>ASCII Tetris</h3>
 			<hr></hr>
-			<ImageSlides contentArray={tetrisImages} direction={"Left"} />
+			<ImageSlides contentArray={tetrisImages} direction={"Left"} imageStyle={Img1x1}/>
 
 			<div className="Row">
 				<div className="Contributions">

@@ -31,13 +31,14 @@ const Minecraft = () => {
     return(
         <div className="minecraft" onLoad={checkStatus()}>
             <h3>Server Status</h3>
+            <hr></hr>
             <div className="Row">
                 <div className="Row">
                     <div id="left"></div>
                     <div id="center">Checking Server Status</div>
                     <div id="right"></div>
                 </div>
-                <div className="mineImg">
+                <div className="Img1x1_Large">
                     <FramedImage image={minecraft} alt={"Minecraft Fountain"} caption={""}/>
                 </div>
             </div>

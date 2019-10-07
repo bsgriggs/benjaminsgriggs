@@ -3,7 +3,7 @@ import './Feedback.css'
 
 const Feedback = () => {
 
-    let mailString = "mailto:benjaminsgriggs@gmail.com"
+    let mailString = "mailto:benjaminsgriggs@gmail.com?subject=BenjaminSGriggs%20Website%20Feedback"
 
     function mailTo() {
         window.location.href = mailString;
