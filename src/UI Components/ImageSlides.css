@@ -26,13 +26,3 @@
     z-index: -5555;
     cursor: none;
 }
-
-.fullscreen{
-    cursor: zoom-in !important;
-    position: absolute;
-    right:5px;
-    bottom:35px;
-    margin: 0px !important;
-    color: #65379B;
-    text-shadow: 0 0 5px #FFF;
-}

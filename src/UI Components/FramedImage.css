@@ -7,7 +7,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.Frame img{
+.imageFrame img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: inherit;
 }
@@ -17,4 +17,19 @@
     color: white !important;
     text-align: center !important;
     line-height: 1.5 !important;
+}
+
+.imageFrame{
+    position: relative;
+    width: inherit;
+}
+
+.fullscreen{
+    cursor: zoom-in !important;
+    position: absolute;
+    right:5px;
+    bottom:20px;
+    margin: 0px !important;
+    color: #65379B;
+    text-shadow: 0 0 5px #FFF;
 }

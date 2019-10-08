@@ -17,7 +17,6 @@ export class ImageSlides extends React.Component{
         this.indexLeft = this.indexLeft.bind(this);
         this.indexRight = this.indexRight.bind(this);
         this.setString = this.setString.bind(this);
-        this.fullscreen = this.fullscreen.bind(this);
         this.expandDescription = this.expandDescription.bind(this);
     }
 
@@ -42,10 +41,6 @@ export class ImageSlides extends React.Component{
         this.index++;
         this.expandDescription();
         this.forceUpdate();
-    }
-
-    fullscreen(){
-        window.open(this.contentArray[this.index].img);
     }
 
     expandDescription(){   
@@ -73,7 +68,6 @@ export class ImageSlides extends React.Component{
                         <FramedImage image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
                         <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
                         <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
-                        <span className={"fullscreen"}><i onClick={this.fullscreen} className={"fas fa-2x fa-expand"}></i> </span>
                     </div>
                 </div>
             );
@@ -84,7 +78,6 @@ export class ImageSlides extends React.Component{
                         <FramedImage image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
                         <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
                         <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
-                        <span className={"fullscreen"}><i onClick={this.fullscreen} className={"fas fa-2x fa-expand"}></i> </span>
                     </div>
                     <div>
                         {this.paragraphs}
@@ -102,7 +95,6 @@ export class ImageSlides extends React.Component{
                         <FramedImage  image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
                         <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
                         <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
-                        <span className={"fullscreen"}><i onClick={this.fullscreen} className={"fas fa-2x fa-expand"}></i> </span>
                     </div>
                 </div>
             );
