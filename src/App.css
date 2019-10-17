@@ -74,6 +74,7 @@ a:hover{
 hr{
 	width: 70%;
 	border: 2px solid #65379B;
+	background-color: #65379B; 
 }
 
 .Img1x1_Large{ width: 32vw;}
