@@ -1,6 +1,7 @@
 import React from 'react'
 import FramedImage from '../FramedImage'
 import professionalPic from '../../imgs/professionalPicTrim.jpg'
+import { NavLink } from 'react-router-dom'
 import Contact from './Contact'
 
 import mendix from '../../imgs/mendix.jpg'
@@ -109,14 +110,14 @@ const Home = () => {
 					</div>
 					<p >Agriculture Technology Procurement (ATP) is a web application design for
 						Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
-						leased devices. <strong><a href="/project">Learn more about AITP.</a></strong>
+						leased devices. <strong><NavLink to='/project'>Learn more about ATP.</NavLink></strong>
 					</p>	
 				</div>
 
 				<h5>Career Path Maker</h5>
 				<div className="Row">
 					<p >Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff
-						to plan their future careers within the university. <strong><a href="/project">Learn more about CPM.</a></strong>
+						to plan their future careers within the university. <strong><NavLink to='/project'>Learn more about CPM.</NavLink></strong>
 					</p>
 					<div className="Img16x9">
 						<FramedImage image={cpm} alt={"CPM Homepage"} caption={"CPM Homepage"}  click={clickCPM}/>
@@ -129,14 +130,14 @@ const Home = () => {
 						<FramedImage image={benjaminsgriggs} alt={"This Homepage"} caption={"This Homepage"}  click={clickBenJo}/>
 					</div>
 					<p >This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
-						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. <strong><a href="/project">Learn more about benjaminsgriggs.com.</a></strong>
+						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. <strong><NavLink to='/project'>Learn more about benjaminsgriggs.com.</NavLink></strong>
 					</p>
 				</div>
 				
 				<h5>Cost Distribution</h5>
 				<div className="Row">
 					<p >Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction 
-						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><a href="/project">Learn more about Cost Distribution.</a></strong>
+						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><NavLink to='/project'>Learn more about Cost Distribution.</NavLink></strong>
 					</p>
 					<div className="Img16x9">
 						<FramedImage image={cost} alt={"Cost Distribution Overview"} caption={"Cost Distribution Overview"}  click={clickCost}/>
@@ -149,7 +150,7 @@ const Home = () => {
 					<FramedImage image={tetris} alt={"Tetris User Interface"} caption={"Tetris User Interface"} click={clickTetris}/>
 				</div>
 					<p > ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
-						the randomly selected blocks to be dropped. <strong><a href="/project">Learn more about ASCII Tetris.</a></strong>
+						the randomly selected blocks to be dropped. <strong><NavLink to='/project'>Learn more about ASCII Tetris.</NavLink></strong>
 					</p>
 				</div>
 

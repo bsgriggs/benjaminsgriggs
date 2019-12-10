@@ -15,6 +15,7 @@ import cpmScheduledEvent from '../../imgs/Screenshots/cpmScheduledEvent.jpg'
 import benjaminsgriggs from '../../imgs/Screenshots/benjaminsgriggs.jpg'
 //cost
 import cost from '../../imgs/Screenshots/costHome.jpg'
+import costReport from '../../imgs/Screenshots/costReport.jpg'
 //tetris
 import tetris from '../../imgs/Screenshots/tetris.jpg'
 
@@ -59,6 +60,7 @@ const Project = () => {
 	]
 	const costImages = [
 		{ img: cost, caption:"Cost Plan Overview",description:"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me.\nIn one case, an application administrator had deleted a user from the application database to prevent them from accessing the application. This resulted in the system being unable to retieve any objects referring to the former account. After I identified this mistake, I used a backup and some SQL commands to 'stitch' together the missing data and restore the system to operation.\nDue to security concerns, I am unable to provide any more detailed screenshots."},
+		// { img: costReport, caption:"Cost Plan Report",description:""},
 	]
 	const tetrisImages = [
 		{ img: tetris, caption:"Terminal Tetris",description:"ASCII Tetris was a fun class project developed to run in a linux terminal and expand our understanding of C data structures. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped. Essentially, the program initially fills a queue of 5 blocks randomly. Then, the program dequeues a block, adds it to the top of the interface, and randomly selects another block to add to the queue.\nAlso, the program includes weighted scoring. The higher level the play is in the game, the more points they receive for a line clear."},

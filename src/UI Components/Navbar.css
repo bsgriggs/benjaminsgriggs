@@ -51,6 +51,7 @@
     padding: 0vh 1vw 0vh 1vw;
     cursor: pointer;
     list-style: none;
+    text-decoration: none !important;
 }
 
 .Navbar a:hover{
@@ -99,7 +100,7 @@
     font-weight: bold;
     line-height: 40px;
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
 }
 
