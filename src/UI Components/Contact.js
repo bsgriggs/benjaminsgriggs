@@ -2,12 +2,12 @@ import React from 'react'
 import './Contact.css'
 // import FramedImage from '../FramedImage'
 
-// import cookiePile from '../../imgs/cookiesPile.jpg'
+// import cookiePile from '../imgs/cookiesPile.jpg'
 
-import LinkedIn from '../../imgs/linkedin.jpg'
-import Facebook from '../../imgs/facebook.jpg'
-import Twitter from '../../imgs/twitter.jpg'
-import GitHub from '../../imgs/github.jpg'
+// import LinkedIn from '../imgs/linkedin.jpg'
+// import Facebook from '../imgs/facebook.jpg'
+// import Twitter from '../imgs/twitter.jpg'
+// import GitHub from '../imgs/github.jpg'
 
 const Contact = () => {
 
@@ -46,10 +46,10 @@ const Contact = () => {
                     
                 </div>            
                 <div className="MediaImages">
-                    <img className="Clickable" alt="LinkedIn" src={LinkedIn} onClick={linkedin}></img>
-                    <img className="Clickable" alt="Facebook" src={Facebook} onClick={facebook}></img>
-                    <img className="Clickable" alt="Twitter" src={Twitter} onClick={twitter}></img>
-                    <img className="Clickable" alt="GitHub" src={GitHub} onClick={github}></img>
+                    <img className="Clickable" alt="LinkedIn" src={'../imgs/linkedin.jpg'} onClick={linkedin}></img>
+                    <img className="Clickable" alt="Facebook" src={'../imgs/facebook.jpg'} onClick={facebook}></img>
+                    <img className="Clickable" alt="Twitter" src={'../imgs/twitter.jpg'} onClick={twitter}></img>
+                    <img className="Clickable" alt="GitHub" src={'../imgs/github.jpg'} onClick={github}></img>
                 </div>
             </div>
             {/* <div>

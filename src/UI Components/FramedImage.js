@@ -12,7 +12,7 @@ const FramedImage = (props) =>{
         <div onClick={click} className={click ? 'Clickable' : 'notClickable'}>
             <div className="Frame" style={styles}>
                 <div className="imageFrame">
-                    <img src={image} alt={alt}></img>
+                    <img src={`../imgs/${image}`} alt={alt}></img>
                     <span className={"fullscreen"}><i onClick={fullscreen} className={"fas fa-2x fa-expand"}></i> </span>
                 </div>
                 <p>{caption}</p>   

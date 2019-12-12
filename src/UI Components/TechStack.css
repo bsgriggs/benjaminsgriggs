@@ -1,0 +1,10 @@
+.Tech{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Tech img{
+	width: 50%;
+	height: auto;
+}

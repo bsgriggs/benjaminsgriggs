@@ -2,6 +2,7 @@ import React from 'react'
 import FramedImage from './FramedImage'
 import './ImageSlides.css'
 
+
 export class ImageSlides extends React.Component{
 	constructor(props){
 		super(props);
@@ -82,7 +83,6 @@ export class ImageSlides extends React.Component{
                     <div>
                         {this.paragraphs}
                     </div>
-                    
                 </div>
             );
         } else {

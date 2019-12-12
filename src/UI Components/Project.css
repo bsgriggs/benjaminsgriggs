@@ -1,24 +1,22 @@
-@media only screen and (max-width: 700px) {
-	.TechStack{width: 100% !important;}
+.Contributions{
+	width: 100%;
 }
-
-.Contributions i{
-	margin: 0vh 1vw 0vh 0vw !important;
-	padding: 0 !important;
-	color: #65379B;
-}
-
 .Contributions h6{
 	margin: .5vh 2vw;
 	padding: 0;
 }
 
-.TechStack {
-	width: 60%;
+.TechStack{
+	width: 100%;
 }
+
 .TechStack hr{
 	width: 60%;
 	border: 1px solid #65379B;
+}
+.TechStackList{
+	display: flex;
+	justify-content: space-evenly;
 }
 #small{
 	width: 60%;
@@ -32,10 +30,16 @@
 .Project p{
 	margin: 2vh 3vw;
 }
+
 .linkContainer{
 	text-align: center;
 	margin-bottom: 10px;
 }
+
 .linkContainer p {
 	margin: 0;
+}
+
+.noContributions{
+	display: none;
 }

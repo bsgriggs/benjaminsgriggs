@@ -1,31 +1,7 @@
 import React from 'react'
-import FramedImage from '../FramedImage'
-import professionalPic from '../../imgs/professionalPicTrim.jpg'
+import FramedImage from './FramedImage'
 import { NavLink } from 'react-router-dom'
 import Contact from './Contact'
-
-import mendix from '../../imgs/mendix.jpg'
-import java from '../../imgs/java.jpg'
-import c from '../../imgs/c.jpg'
-import cSharp from '../../imgs/cSharp.jpg'
-import css from '../../imgs/css.jpg'
-import html from '../../imgs/html.jpg'
-import javascript from '../../imgs/javascript.jpg'
-import react from '../../imgs/React.jpg'
-import node from '../../imgs/nodejs.jpg'
-import git from '../../imgs/github.jpg'
-import oracle from '../../imgs/oracle.jpg'
-import postgresql from '../../imgs/PostgreSQL.jpg'
-import windows from '../../imgs/windows.jpg'
-import raspberry from '../../imgs/raspberry.jpg'
-import ubuntu from '../../imgs/ubuntu.jpg'
-
-import atp from '../../imgs/Screenshots/atpHome.jpg'
-import cpm from '../../imgs/Screenshots/cpmHome.jpg'
-import benjaminsgriggs from '../../imgs/Screenshots/benjaminsgriggs.jpg'
-import cost from '../../imgs/Screenshots/costHome.jpg'
-import tetris from '../../imgs/Screenshots/tetris.jpg'
-
 import './Home.css';
 
 const Home = () => {
@@ -59,16 +35,16 @@ const Home = () => {
 					<p>I am a <strong><a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a></strong> Computer
 					 and Information Technology student. I work for Purdue's IT Enterprise Solutions as an Application Developer.
 					  In my free time, I like to go for a run, bake cookies, practice new programming techniques, play piano, and play my Nintendo Switch.</p>
-					  <div className="rowImages">
-					  	<i className="fas fa-2x fa-running"  ></i>
-					  	<i className="fas fa-2x fa-cookie-bite"  ></i>
-						<i className="fas fa-2x fa-laptop-code"  ></i>
-						<i className="fas fa-2x fa-music"  ></i>
-						<i className="fas fa-2x fa-gamepad"  ></i>
+					  <div className="rowImages Wobble">
+					  	<i className="fas fa-2x fa-running "  ></i>
+					  	<i className="fas fa-2x fa-cookie-bite "  ></i>
+						<i className="fas fa-2x fa-laptop-code "  ></i>
+						<i className="fas fa-2x fa-music "  ></i>
+						<i className="fas fa-2x fa-gamepad "  ></i>
 					  </div>
 				</div>
 				<div className="Img1x1_Large">
-					<FramedImage image={professionalPic} alt={"Me"} caption={""}/>
+					<FramedImage image={"professionalPicTrim.jpg"} alt={"Me"} caption={""}/>
 				</div>
 			</div>
 
@@ -77,27 +53,27 @@ const Home = () => {
 			<hr></hr>
 			<h5>Programming Languages and Tools</h5>
 			<div className="rowImages">
-				<img alt="mendix logo" src={mendix}></img>
-				<img alt="java logo" src={java}></img>
-				<img alt="c logo" src={c}></img>
-				<img alt="c# logo" src={cSharp}></img>
-				<img alt="css logo" src={css}></img>
-				<img alt="html logo" src={html}></img>
-				<img alt="javascript logo" src={javascript}></img>
+				<img alt="mendix logo" src={'../imgs/mendix.jpg'}></img>
+				<img alt="java logo" src={'../imgs/java.jpg'}></img>
+				<img alt="c logo" src={'../imgs/c.jpg'}></img>
+				<img alt="c# logo" src={'../imgs/cSharp.jpg'}></img>
+				<img alt="css logo" src={'../imgs/css.jpg'}></img>
+				<img alt="html logo" src={'../imgs/html.jpg'}></img>
+				<img alt="javascript logo" src={'../imgs/javascript.jpg'}></img>
 			</div>
 			<div className="rowImages">
-				<img alt="react logo" src={react}></img>
-				<img alt="node js logo" src={node}></img>
-				<img alt="github logo" src={git}></img>
-				<img alt="oracle logo" src={oracle}></img>
-				<img alt="postgresql logo" src={postgresql}></img>
+				<img alt="react logo" src={'../imgs/react.jpg'}></img>
+				<img alt="node js logo" src={'../imgs/nodejs.jpg'}></img>
+				<img alt="github logo" src={'../imgs/github.jpg'}></img>
+				<img alt="oracle logo" src={'../imgs/oracle.jpg'}></img>
+				<img alt="postgresql logo" src={'../imgs/postgresql.jpg'}></img>
 			</div>
 			<div>
 				<h5>Operating Systems</h5>
 				<div className="rowImages">
-					<img alt="windows logo" src={windows}></img>
-					<img alt="raspberry pi logo" src={raspberry}></img>
-					<img alt="ubuntu logo" src={ubuntu}></img>
+					<img alt="windows logo" src={'../imgs/windows.jpg'}></img>
+					<img alt="raspberry pi logo" src={'../imgs/raspberry.jpg'}></img>
+					<img alt="ubuntu logo" src={'../imgs/ubuntu.jpg'}></img>
 				</div>
 			</div>
 
@@ -106,7 +82,7 @@ const Home = () => {
 				<h5>Agriculture Technology Procurement</h5>
 				<div className="Row">
 					<div className="Img16x9">
-						<FramedImage image={atp} alt={"ATP Homepage"} caption={"ATP Homepage"}  click={clickATP}/>
+						<FramedImage image={"atpHome.jpg"} alt={"ATP Homepage"} caption={"ATP Homepage"}  click={clickATP}/>
 					</div>
 					<p >Agriculture Technology Procurement (ATP) is a web application design for
 						Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of
@@ -120,14 +96,14 @@ const Home = () => {
 						to plan their future careers within the university. <strong><NavLink to='/project'>Learn more about CPM.</NavLink></strong>
 					</p>
 					<div className="Img16x9">
-						<FramedImage image={cpm} alt={"CPM Homepage"} caption={"CPM Homepage"}  click={clickCPM}/>
+						<FramedImage image={"cpmHome.jpg"} alt={"CPM Homepage"} caption={"CPM Homepage"}  click={clickCPM}/>
 					</div>
 				</div>
 									
 				<h5>benjaminsgriggs.com</h5>
 				<div className="Row">
 					<div className="Img16x9">
-						<FramedImage image={benjaminsgriggs} alt={"This Homepage"} caption={"This Homepage"}  click={clickBenJo}/>
+						<FramedImage image={"benjaminsgriggs.jpg"} alt={"This Homepage"} caption={"This Homepage"}  click={clickBenJo}/>
 					</div>
 					<p >This Website! This website is an experimental website using a raspberry pi 3 to test development techniques.
 						Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status. <strong><NavLink to='/project'>Learn more about benjaminsgriggs.com.</NavLink></strong>
@@ -140,14 +116,14 @@ const Home = () => {
 						projects. Developed by EPI-USE of West Lafayette and supported by me. <strong><NavLink to='/project'>Learn more about Cost Distribution.</NavLink></strong>
 					</p>
 					<div className="Img16x9">
-						<FramedImage image={cost} alt={"Cost Distribution Overview"} caption={"Cost Distribution Overview"}  click={clickCost}/>
+						<FramedImage image={"costHome.jpg"} alt={"Cost Distribution Overview"} caption={"Cost Distribution Overview"}  click={clickCost}/>
 					</div>
 				</div>
 				
 				<h5>ASCII Tetris</h5>
 				<div className="Row">
 				<div className="Img1x1_Small">
-					<FramedImage image={tetris} alt={"Tetris User Interface"} caption={"Tetris User Interface"} click={clickTetris}/>
+					<FramedImage image={"tetris.jpg"} alt={"Tetris User Interface"} caption={"Tetris User Interface"} click={clickTetris}/>
 				</div>
 					<p > ASCII Tetris is a group class project developed to run in a linux terminal. I designed the interface along with the queue to impliment
 						the randomly selected blocks to be dropped. <strong><NavLink to='/project'>Learn more about ASCII Tetris.</NavLink></strong>

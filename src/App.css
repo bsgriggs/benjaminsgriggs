@@ -19,6 +19,7 @@
 	.Img16x9 { width: 85vw !important;}
 	.Img1x1_Small {	width: 85vw !important;}
 	.Img4x3{ width: 85vw !important;}
+	.App {margin-top: 150px !important;}
 }
 .App {
 	margin-top: 105px;
@@ -77,10 +78,10 @@ hr{
 	background-color: #65379B; 
 }
 
-.Img1x1_Large{ width: 32vw;}
-.Img16x9 { width: 40vw;}
+.Img1x1_Large{ width: 35vw;}
+.Img16x9 { width: 45vw;}
 .Img1x1_Small {	width: 25vw;}
-.Img4x3{ width: 32vw;}
+.Img4x3{ width: 35vw;}
 
 i{
 	color: #65379B;
