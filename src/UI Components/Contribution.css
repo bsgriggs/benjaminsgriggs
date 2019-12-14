@@ -13,5 +13,5 @@
 .Contribution i{
 	margin: 0vh 1vw 0vh 10vw ;
 	padding: 0 !important;
-	color: #65379B;
+	color: var(--dark-purple);
 }

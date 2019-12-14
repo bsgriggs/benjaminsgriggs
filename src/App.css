@@ -21,6 +21,11 @@
 	.Img4x3{ width: 85vw !important;}
 	.App {margin-top: 150px !important;}
 }
+:root{
+	--dark-purple: #65379B;
+	--purdue-gold: #C28E0E;
+}
+
 .App {
 	margin-top: 105px;
 }
@@ -68,14 +73,14 @@ a{
 }
 
 a:hover{
-	color: #C28E0E;
+	color: var(--purdue-gold);
 	text-decoration: underline;
 }
 
 hr{
 	width: 70%;
-	border: 2px solid #65379B;
-	background-color: #65379B; 
+	border: 2px solid var(--dark-purple);
+	background-color: var(--dark-purple); 
 }
 
 .Img1x1_Large{ width: 35vw;}
@@ -84,7 +89,7 @@ hr{
 .Img4x3{ width: 35vw;}
 
 i{
-	color: #65379B;
+	color: var(--dark-purple);
 }
 
 .Clickable{

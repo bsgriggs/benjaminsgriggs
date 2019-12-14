@@ -16,7 +16,7 @@
     top: 50%;
     transform: translateY(-50%);
     margin: 0 !important;
-    color: #65379B;
+    color: var(--dark-purple);
     text-shadow: 0 0 5px #FFF;
 }  
 .imageInstance #btnL{ left: 5px; }

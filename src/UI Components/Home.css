@@ -31,15 +31,15 @@
 		position: static !important;
 		margin-top: 10vh;
 	} .HomeNav a{
-		color: #65379B !important;
-		border-color: #65379B !important;
+		color: var(--dark-purple) !important;
+		border-color: var(--dark-purple) !important;
 		border-width: 3px;
 		border-style: solid;
 		font-size: calc(1vw + 12px);
 		font-weight: bold;
 		padding: 1vh 2vw;
 	} .HomeNav a:hover{
-		color: #65379B !important;
+		background-color: #FFFFFF !important;
 		text-decoration: none;
 	}
 }

@@ -12,7 +12,7 @@
 
 .TechStack hr{
 	width: 60%;
-	border: 1px solid #65379B;
+	border: 1px solid var(--dark-purple);
 }
 .TechStackList{
 	display: flex;
@@ -20,11 +20,11 @@
 }
 #small{
 	width: 60%;
-	border: 1px solid #65379B;
+	border: 1px solid var(--dark-purple);
 }
 .Contributions hr{
 	width: 50%;
-	border: 1px solid #65379B;
+	border: 1px solid var(--dark-purple);
 }
 
 .Project p{

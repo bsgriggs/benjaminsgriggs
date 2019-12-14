@@ -30,6 +30,6 @@
     right:5px;
     bottom:20px;
     margin: 0px !important;
-    color: #65379B;
+    color: var(--dark-purple);
     text-shadow: 0 0 5px #FFF;
 }

@@ -11,7 +11,7 @@
         margin: 0vh 2vw 0vh 1vw !important;
     }
 
-    #home, #skill{
+    #home, #resume, #travel{
         width: 0% !important;
         opacity: 0;
         padding: 0;
@@ -24,6 +24,7 @@
 .Navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 65px;
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
@@ -31,15 +32,20 @@
     top: 40px;
     position: fixed;
     z-index: 900;
-}
-
-.Navbar img {
+} .Navbar #first{
+    display: flex;
+    align-items: center;
+    height: 65px;
+} .Navbar #second{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+} .Navbar img {
     margin: 0vh 2vw 0vh 1vw;
     cursor: pointer;
     height: auto;
-}
-
-.Navbar a{
+} .Navbar a{
     font-size: calc(.9vw + 7.5px);
     font-weight: bold;
     color: white;
@@ -50,9 +56,7 @@
     cursor: pointer;
     list-style: none;
     text-decoration: none !important;
-}
-
-.Navbar a:hover{
+} .Navbar a:hover{
     color: white;
     background: rgba(35, 35, 35, .4);
     /* border-bottom-color: #DDC5F9;
@@ -60,9 +64,7 @@
     border-bottom-style: groove; */
     transition: color .5s;
     -webkit-transition: color .5s;
-}
-
-.Navbar a:last-child{
+} .Navbar a:last-child{
     margin-left: auto;
 }
 
