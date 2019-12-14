@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './UI Components/Home'
 import Projects from './UI Components/Projects'
 import Contact from './UI Components/Contact'
+import Skills from './UI Components/Skills'
 // import Minecraft from './UI Components/Minecraft'
 import Travel from './UI Components/Travel'
 // import Feedback from './UI Components/Feedback'
@@ -23,6 +24,7 @@ export class App extends React.Component{
 					<Route exact path='/contact' component={Contact} />
 					{/* <Route exact path='/minecraft' component={Minecraft} /> */}
 					<Route exact path='/travel' component={Travel} />
+					<Route exact path='/skills' component={Skills} />
 					{/* <Route exact path='/feedback' component={Feedback} /> */}
 				</div>
 			</ScrollToTop>

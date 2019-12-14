@@ -1,55 +1,65 @@
 import React from 'react'
-import FramedImage from './FramedImage'
+// import FramedImage from './FramedImage'
+// import { NavLink } from 'react-router-dom'
+// import Contact from './Contact'
 import { NavLink } from 'react-router-dom'
-import Contact from './Contact'
 import './Home.css';
 
 const Home = () => {
 
-	function clickATP(){
-		window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
-	}
+	// function clickATP(){
+	// 	window.open('https://purdueatp-accp.mendixcloud.com', '_blank');
+	// }
 
-	function clickCPM(){
-		window.open('https://cpm.mendixcloud.com', '_blank');
-	}
+	// function clickCPM(){
+	// 	window.open('https://cpm.mendixcloud.com', '_blank');
+	// }
 
-	function clickBenJo(){
-		window.open('https://github.com/bsgriggs/benjodev-react', '_blank');
-	}
+	// function clickBenJo(){
+	// 	window.open('https://github.com/bsgriggs/benjodev-react', '_blank');
+	// }
 
-	function clickCost(){
-		window.open('https://costdistribution100.mendixcloud.com/', '_blank');
-	}
+	// function clickCost(){
+	// 	window.open('https://costdistribution100.mendixcloud.com/', '_blank');
+	// }
 
-	function clickTetris(){
-		window.open('https://github.com/bsgriggs/tetris', '_blank');
-	}
+	// function clickTetris(){
+	// 	window.open('https://github.com/bsgriggs/tetris', '_blank');
+	// }
 
   return(
 		<div className="Home">
-			<div className="Row">
-				<div>
-					<h3>About Me</h3>
-					<hr></hr>
-					<p>I am a <strong><a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a></strong> Computer
-					 and Information Technology student. I work for Purdue's IT Enterprise Solutions as an Application Developer.
-					  In my free time, I like to go for a run, bake cookies, practice new programming techniques, play piano, and play my Nintendo Switch.</p>
-					  <div className="rowImages Wobble">
-					  	<i className="fas fa-2x fa-running "  ></i>
-					  	<i className="fas fa-2x fa-cookie-bite "  ></i>
-						<i className="fas fa-2x fa-laptop-code "  ></i>
-						<i className="fas fa-2x fa-music "  ></i>
-						<i className="fas fa-2x fa-gamepad "  ></i>
-					  </div>
-				</div>
-				<div className="Img1x1_Large">
-					<FramedImage image={"professionalPicTrim.jpg"} alt={"Me"} caption={""}/>
-				</div>
+			<div>
+				<h3>About Me</h3>
+				<hr></hr>
+				<p>I am a <strong><a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a></strong> Computer
+					and Information Technology alumni. I am seeking technically challenging positions that requires creativity and teamwork. A position with several growth
+					opportunities fit for an intrinsically motivated learner. In my free time, I like to go for a run, bake cookies, practice new programming techniques, play piano, and play my Nintendo Switch.</p>
+					<div className="rowImages Wobble">
+					<i className="fas fa-2x fa-running "  ></i>
+					<i className="fas fa-2x fa-cookie-bite "  ></i>
+					<i className="fas fa-2x fa-laptop-code "  ></i>
+					<i className="fas fa-2x fa-music "  ></i>
+					<i className="fas fa-2x fa-gamepad "  ></i>
+					</div>
+					<div className="HomeNav">
+						<NavLink to='/projects'>Projects</NavLink>
+						<NavLink to='/skills'>Skills</NavLink>
+						<NavLink to='/contact'>Contact</NavLink>
+						<a href='./Benjamin_Griggs_Resume.pdf' target="_blank" >Resume</a>
+					</div>
+			</div>
+			{/* <div className="Img1x1_Large">
+				<FramedImage image={"professionalPicTrim.jpg"} alt={"Me"} caption={""}/>
+			</div> */}
+			<div className="HomeBackground">
+				<div className="PurpleHalf"></div>
+				<div className="PurpleCurve"></div>
+				<div className="WhiteCurve"></div>
+				<img src={`../imgs/professionalTrim.png`} alt="Benjamin Steven Griggs"></img>
 			</div>
 
-
-			<h3>Skills</h3>
+			{/* <h3>Skills</h3>
 			<hr></hr>
 			<h5>Programming Languages and Tools</h5>
 			<div className="rowImages">
@@ -130,8 +140,8 @@ const Home = () => {
 					</p>
 				</div>
 
-			<Contact />
-		</div>
+			<Contact />*/}
+		</div> 
 	);
 }
 

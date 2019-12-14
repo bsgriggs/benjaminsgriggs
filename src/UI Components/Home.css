@@ -1,12 +1,123 @@
 @media only screen and (max-width: 700px) {
-	.rowImages img{
-		width: 45px !important;
-		height: 45px !important; 
+	:root{
+		--content-width: 100% !important;
 	}
+	.HomeBackground img{
+		margin: 0% 10% 0% 10%!important;
+		width: 80% !important;
+		position: static !important;
+	}
+
+	body{margin: 0 !important}
+
+	.HomeBackground{position: relative !important;}
+	.Home { margin-right: 0 !important;}
+	.PurpleHalf{
+		height: 100% !important;
+		top: 0 !important;
+	}
+	.PurpleCurve{
+		height: 50% !important;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		left: 0 !important;
+	}
+	.WhiteCurve{
+		width: 50% !important;
+		height: 50% !important;
+	}
+
+	.HomeNav {
+		position: static !important;
+		margin-top: 10vh;
+	} .HomeNav a{
+		color: #65379B !important;
+		border-color: #65379B !important;
+		border-width: 3px;
+		border-style: solid;
+		font-size: calc(1vw + 12px);
+		font-weight: bold;
+		padding: 1vh 2vw;
+	} .HomeNav a:hover{
+		color: #65379B !important;
+		text-decoration: none;
+	}
+}
+
+:root{
+	--content-width: 70%;
+}
+
+.Home{
+	width: var(--content-width);
 }
 
 .Home p{
 	margin: 5vh 5vw;
+}
+
+.HomeBackground img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	width: 30%;
+	height: auto;
+}
+.PurpleHalf{
+	position: absolute;
+	width: 50%;
+	height: calc(100% - 65px);
+	left: 50%;
+	top: 65px;
+	background: linear-gradient(90deg, #886AEA 0%, #6457C6 100%);
+	z-index: -3;
+}
+.PurpleCurve{
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	border-top-left-radius: 50%;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: -4;
+	background: linear-gradient(90deg, #65379B 0%, #886AEA 51.04%, #886AEA 96.35%);
+}
+.WhiteCurve{
+	position: absolute;
+	width: 45%;
+	height: 70%;
+	left: 50%;
+	border-bottom-right-radius: 100%;
+	z-index: -2;
+	top: 0;
+	background: #FFFFFF;
+}
+
+.HomeNav {
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+	bottom: 10%;
+	width: var(--content-width);
+	left: 0;
+} .HomeNav a{
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-width: 4px;
+	border-style: solid;
+	font-size: calc(1vw + 12px);
+	font-weight: bold;
+	padding: 1vh 2vw;
+	-webkit-transition : 500ms ease-out;
+	-moz-transition :  500ms ease-out;
+	-o-transition :  500ms ease-out;
+	transition :  500ms ease-out;
+} .HomeNav a:hover{
+	background: rgba(35, 35, 35, .4);
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .Wobble > i{
@@ -28,7 +139,6 @@
 .Wobble > i:nth-child(5) {
 	animation-delay: 1.6s;
 }
-
 
 @keyframes wobble{
 	0%{

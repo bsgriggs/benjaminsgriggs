@@ -32,24 +32,26 @@ export class Navbar extends React.Component{
 
 		return (
 			<div>
-				<div id="slider" className="up">
+				{/* <div id="slider" className="up">
 					<div className="Slider" onMouseEnter={this.slideNav} onMouseLeave={this.slideNav}>
 						<NavLink exact to='/'>Benjamin</NavLink>
-						{/* <NavLink to='/feedback'>Feedback</NavLink> */}
-						<a href='./Benjamin_Griggs_Resume.pdf' target="_blank" >Resume</a>
+						<NavLink to='/feedback'>Feedback</NavLink>
 					</div>
-				</div>
+				</div> */}
 
 				<div className="Navbar">
 					<img src={"/imgs/BenjaminSGriggs.svg"} alt="logo" onClick={this.clickLogo}/>
 					<NavLink id='home' to='/' 
-						onMouseEnter={this.slideNav} 
-						onMouseLeave={this.slideNav} 
-						isActive={FirstNavActive}>
-							Home<i className="fas fa-caret-down"  ></i> 
+						// onMouseEnter={this.slideNav} 
+						// onMouseLeave={this.slideNav} 
+						isActive={FirstNavActive}
+						>Home
+							{/* <i className="fas fa-caret-down"  ></i>  */}
 					</NavLink>
 					{/* <NavLink to='/minecraft'>Minecraft</NavLink> */}
+					<NavLink to='/skills'>Skills</NavLink>
 					<NavLink to='/projects'>Projects</NavLink>
+					<a href='./Benjamin_Griggs_Resume.pdf' target="_blank" >Resume</a>
 					<NavLink to='/travel'>Travel</NavLink>
 					<NavLink to='/contact'>Contact</NavLink>
 				</div>

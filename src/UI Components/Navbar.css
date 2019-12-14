@@ -9,7 +9,6 @@
 
     .Navbar img {
         margin: 0vh 2vw 0vh 1vw !important;
-        width: calc(25vw + 15px) !important;
     }
 
     #home, #skill{
@@ -38,7 +37,6 @@
     margin: 0vh 2vw 0vh 1vw;
     cursor: pointer;
     height: auto;
-    width: calc(20vw + 10px);
 }
 
 .Navbar a{
