@@ -5,7 +5,7 @@ const FramedImage = (props) =>{
     const { image, alt, caption, styles, click } = props;
 
     function fullscreen(){
-        window.open(image);
+        window.open(`../imgs/${image}`);
     }
 
     return(
