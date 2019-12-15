@@ -3,13 +3,7 @@
     
     .down {top:65px !important; width: 100% !important;}
     
-    a{font-size: calc(1vw + 11px)!important;}
-    
     .Slider{width:100%!important; transition: ease .5s !important;}
-
-    .Navbar img {
-        margin: 0vh 2vw 0vh 1vw !important;
-    }
 
     #home, #resume, #travel{
         width: 0% !important;
@@ -32,17 +26,8 @@
     top: 40px;
     position: fixed;
     z-index: 900;
-} .Navbar #first{
-    display: flex;
-    align-items: center;
-    height: 65px;
-} .Navbar #second{
-    height: 65px;
-    display: flex;
-    align-items: center;
-    height: 65px;
 } .Navbar img {
-    margin: 0vh 2vw 0vh 1vw;
+    margin: 1vh 2vw;
     cursor: pointer;
     height: auto;
 } .Navbar a{
@@ -52,7 +37,7 @@
     text-decoration: none;
     line-height: 65px;
     height: 65px;
-    padding: 0vh 1vw 0vh 1vw;
+    padding: 0vh 1.5vw 0vh 1.5vw;
     cursor: pointer;
     list-style: none;
     text-decoration: none !important;
@@ -94,7 +79,7 @@
 
 .Slider a{
     height: 50px;
-    padding: 0vh 1vw 0vh 1vw;
+    padding: 0vh 2vw 0vh 2vw;
     cursor: pointer;
     font-size: calc(.8vw + 7.5px);
     font-weight: bold;

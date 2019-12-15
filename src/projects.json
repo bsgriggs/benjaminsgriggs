@@ -2,6 +2,7 @@
         "projects":[
                 {
                         "key": 0,
+                        "id":"ATP",
                         "title":"Agriculture Technology Procurement",
                         "link_title":"Requires Purdue Login",
                         "link":"https://purdueatp.mendixcloud.com/",
@@ -91,6 +92,7 @@
                 },
                 {
                         "key": 1,
+                        "id":"CPM",
                         "title":"Career Path Maker",
                         "link_title":"Public Site",
                         "link":"https://cpm.mendixcloud.com/",
@@ -171,6 +173,7 @@
                 },
                 {
                         "key": 2,
+                        "id":"bsgriggs",
                         "title":"benjaminsgriggs.com",
                         "link_title":"Source Code",
                         "link":"https://github.com/bsgriggs/benjaminsgriggs/",
@@ -178,7 +181,7 @@
                                 { 
                                         "img": "benjaminsgriggs.jpg", 
                                         "caption":"This Homepage",
-                                        "description":"This Website! This website is an experimental website using a raspberry pi 3 to test development techniques. Also, this website is a catalog of my trip to Turkey in Summer 2019 and a Minecraft Server API to check my Minecraft Server's status.\nGiven that you can already see the entirety of the project, it doesn't make sense to provide many screenshots. If you have any questions or feedback, then refer to the Feedback page."
+                                        "description":"This Website! This website is an experimental website to test development techniques. Also, this website is a catalog of my trip to Turkey in the Summer of 2019.\nGiven that you can already see the entirety of the project, it doesn't make sense to provide many screenshots. If you have any questions or feedback, then refer to the Contact page."
                                 }
                         ],
                         "key_contributions":[
@@ -208,6 +211,7 @@
                 },
                 {
                         "key": 3,
+                        "id":"cost",
                         "title":"Cost Distribution",
                         "link_title":"Requires Purdue Login",
                         "link":"https://costdistribution100.mendixcloud.com/",
@@ -278,6 +282,7 @@
                 },
                 {
                         "key": 4,
+                        "id":"tetris",
                         "title":"ASCII Tetris",
                         "link_title":"Source Code",
                         "link":"https://github.com/bsgriggs/tetris/",

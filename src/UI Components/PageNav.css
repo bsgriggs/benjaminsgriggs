@@ -1,0 +1,64 @@
+@media only screen and (max-width: 700px) {
+        .PageNav_Outer {width: 90% !important;}
+        .PageNav_Inner {width: 90% !important;}
+        .PageNav_Outer i {
+                right: -7% !important;
+                 transform: scale(2.5);
+        }  
+        .Left{
+                left: -84% !important;
+                animation: none !important;
+        }  
+}
+.PageNav_Outer {
+        position: fixed;
+        background-color: var(--dark-purple);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 40%;
+        align-items: center;
+        cursor: pointer;
+} .PageNav_Outer  i {
+        color: white;
+        position: absolute;
+        right: -4%;
+        top: 40%;
+}
+
+.PageNav_Outer p{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin: 1vh 0vw;
+}
+
+.PageNav_Inner{
+        position: relative;
+        width: 95%;
+}
+
+.Left{
+        left:-38%;
+        position: fixed;
+        z-index: 800;
+        transition: ease .5s;
+        animation: enlarge 7s infinite ease-in-out;
+        animation-delay: 15s;
+}.Right{
+        left:0;
+        position: fixed;
+        z-index: 800;
+        transition: ease .5s;
+}
+
+@keyframes enlarge{
+        0%{
+                transform: translateX(0px);
+        } 20%{
+                transform: translateX(10px);
+        } 95%{
+                transform: translateX(10px);
+        } 100%{
+                transform: translateX(0px);
+        }
+}

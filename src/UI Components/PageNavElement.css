@@ -1,0 +1,16 @@
+.NavElement{
+        border-color: #777;
+        border-style: solid;
+        border-width: 3px 0px 0px 0px;
+        background-color: white;
+        padding: 2vh 1vw;
+        margin: 0 !important;
+        text-align: center;
+        font-weight: unset !important;
+        color: black !important;
+} .NavElement:last-child{
+        border-width: 3px 0px 3px 0px;
+} .NavElement:hover{
+        background-color: #ddd;
+        transition: 0.5s ease-in;
+}

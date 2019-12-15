@@ -11,7 +11,7 @@ class Contribution extends React.Component{
         render() {
                 return(
                         <div className="Contribution">
-                                <i class="fas fa-handshake"></i>
+                                <i className="fas fa-handshake"></i>
                                 <p>{this.key_contribution.contribution}</p>
                         </div>
                 );

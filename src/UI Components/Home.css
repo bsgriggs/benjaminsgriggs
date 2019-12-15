@@ -29,18 +29,13 @@
 
 	.HomeNav {
 		position: static !important;
-		margin-top: 10vh;
+		margin-top: 10vh !important;
 	} .HomeNav a{
 		color: var(--dark-purple) !important;
 		border-color: var(--dark-purple) !important;
-		border-width: 3px;
-		border-style: solid;
-		font-size: calc(1vw + 12px);
-		font-weight: bold;
-		padding: 1vh 2vw;
+		padding: 0.5vh 1.5vw !important;
 	} .HomeNav a:hover{
 		background-color: #FFFFFF !important;
-		text-decoration: none;
 	}
 }
 

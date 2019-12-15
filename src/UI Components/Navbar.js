@@ -41,17 +41,13 @@ export class Navbar extends React.Component{
 				</div>
 
 				<div className="Navbar">
-					<div id='first'>
-						<img src={"/imgs/BenjaminSGriggs.svg"} alt="logo" onClick={this.clickLogo}/>
-						<NavLink id='home' to='/' isActive={FirstNavActive}>Home</NavLink>
-						<NavLink to='/skills'>Skills</NavLink>
-						<NavLink to='/projects'>Projects</NavLink>
-						<NavLink id='travel' to='/travel'>Travel</NavLink>
-					</div>
-					<div id='second'>
-						<a id='resume' href='./Benjamin_Griggs_Resume.pdf' target="_blank" >Resume</a>
-						<NavLink to='/contact'>Contact</NavLink>
-					</div>
+					<img src={"/imgs/BenjaminSGriggs.svg"} alt="logo" onClick={this.clickLogo}/>
+					<NavLink id='home' to='/' isActive={FirstNavActive}>Home</NavLink>
+					<NavLink to='/skills'>Skills</NavLink>
+					<NavLink to='/projects'>Projects</NavLink>
+					<NavLink id='travel' to='/travel'>Travel</NavLink>
+					<a id='resume' href='./Benjamin_Griggs_Resume.pdf' target="_blank" >Resume</a>
+					<NavLink to='/contact'>Contact</NavLink>
 				</div>
 			</div>
 		);

@@ -12,17 +12,13 @@ class Project extends React.Component{
                 this.Img16x9 = {
                         width: '45vw'
                 }
-                this.Img1x1 = {
-                        width: '25vw'
-                }
 	}
 
         render() {
-                console.log(this.project)
                 if (this.project.key % 2 === 0){
                         return(
                                 <div className="Project">
-                                        <h3>{this.project.title}</h3>
+                                        <h3 id={this.project.id}>{this.project.title}</h3>
                                         <hr></hr>
                                         <div className="linkContainer">
                                                 <p>{this.project.link_title}</p>
@@ -55,7 +51,7 @@ class Project extends React.Component{
                 } else {
                         return(
                                 <div className="Project">
-                                        <h3>{this.project.title}</h3>
+                                        <h3 id={this.project.id}>{this.project.title}</h3>
                                         <hr></hr>
                                         <div className="linkContainer">
                                                 <p>{this.project.link_title}</p>

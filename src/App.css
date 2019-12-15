@@ -6,7 +6,7 @@
 	.Row div{
 		width: 85vw !important;
 	}
-	p, a{	font-size: calc(1vw + 10px) !important; text-align: center;}
+	p, a{	font-size: calc(1vw + 11px) !important; text-align: center;}
 
 	h1{ font-size: calc(1vw + 28px)!important;}
 	h2{ font-size: calc(1vw + 25px)!important;}
@@ -49,6 +49,7 @@ html {
 .rowImages{
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	margin-bottom: 5vh;
 }
 
