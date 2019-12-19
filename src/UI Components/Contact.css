@@ -5,7 +5,7 @@
 .Contact .MediaImages{
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -13,6 +13,7 @@
 .Contact .MediaImages img{
     width: 13%;
     height: auto;
+    margin: auto;
 }
 
 .Contact .ContactInfo {

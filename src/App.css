@@ -41,16 +41,17 @@ html {
 	width: 100%;
 }
 
-.rowImages img{
-	width: 7%;
-	height: 7%;
-	margin: 1vw;
-}
 .rowImages{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	margin-bottom: 5vh;
+}.rowImages img{
+	width: 7%;
+	height: 7%;
+	margin: auto;
+}.rowImages i{
+	margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6{
