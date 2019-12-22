@@ -8,23 +8,22 @@ class Project extends React.Component{
         constructor(props){
                 super(props);
                 this.project = props.project
-                
-                this.Img16x9 = {
-                        width: '45vw'
-                }
+                this.index = props.index
 	}
 
         render() {
-                if (this.project.key % 2 === 0){
+                if (this.index % 2 === 0){
                         return(
                                 <div className="Project">
+                                        <span id={this.project.id} className="Padding"></span>
                                         <h3 id={this.project.id}>{this.project.title}</h3>
                                         <hr></hr>
+                                        <h5>{this.project.date}</h5>
                                         <div className="linkContainer">
                                                 <p>{this.project.link_title}</p>
                                                 <strong><a href={this.project.link} target="_blank" rel="noopener noreferrer">{this.project.link}</a></strong>
                                         </div>
-                                        <ImageSlides contentArray={this.project.content} imageStyle={this.Img16x9} />
+                                        <ImageSlides contentArray={this.project.content} imageStyle={this.ImageStyle} />
         
                                         <div className="Row">
                                                 <div className="TechStack">
@@ -51,13 +50,15 @@ class Project extends React.Component{
                 } else {
                         return(
                                 <div className="Project">
-                                        <h3 id={this.project.id}>{this.project.title}</h3>
+                                        <span id={this.project.id} className="Padding"></span>
+                                        <h3>{this.project.title}</h3>
                                         <hr></hr>
+                                        <h5>{this.project.date}</h5>
                                         <div className="linkContainer">
                                                 <p>{this.project.link_title}</p>
                                                 <strong><a href={this.project.link} target="_blank" rel="noopener noreferrer">{this.project.link}</a></strong>
                                         </div>
-                                        <ImageSlides contentArray={this.project.content} direction={"Left"} imageStyle={this.Img16x9} />
+                                        <ImageSlides contentArray={this.project.content} direction={"Left"} imageStyle={this.ImageStyle} />
         
                                         <div className="Row">
                                                 <div className={(this.project.key_contributions.length !== 0) ? "Contributions":"noContributions"}>

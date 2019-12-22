@@ -1,0 +1,30 @@
+@media only screen and (max-width: 700px) {
+        .Skill{
+                margin: 2vh 3vw !important;
+                width: 22vw !important;
+                height: 22vw !important;
+        } .Skill img{
+                width: 12vw !important;
+        }.Skill svg{
+                width: 22vw !important;
+                height: 22vw !important;
+        }
+}
+
+.Skill{
+        position: relative;
+        width: 11vw;
+        height: 11vw;
+        margin: 1vh 2vw;
+} .Skill img{
+        width: 6vw;
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin:auto;
+} .Skill svg{
+        width: 11vw;
+        height: 11vw;
+}

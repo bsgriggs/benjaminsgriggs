@@ -12,7 +12,6 @@ export class ImageSlides extends React.Component{
         this.direction = props.direction;
         this.fullWidth = {"maxWidth": "100%", "width": "100%"};
         this.paragraphs = this.expandDescription();
-        this.imageStyle = props.imageStyle;
 
         //other methods
         this.indexLeft = this.indexLeft.bind(this);
@@ -75,7 +74,7 @@ export class ImageSlides extends React.Component{
         }else if(this.direction === "Left"){
             return(
                 <div className="Row" onLoad={this.setString}>
-                    <div className='imageInstance' style={this.imageStyle}>
+                    <div className='imageInstance' style={{width: this.contentArray[this.index].scale}}>
                         <FramedImage image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
                         <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
                         <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>
@@ -91,7 +90,7 @@ export class ImageSlides extends React.Component{
                     <div>
                         {this.paragraphs}
                     </div>
-                    <div className='imageInstance' style={this.imageStyle}>
+                    <div className='imageInstance' style={{width: this.contentArray[this.index].scale}}>
                         <FramedImage  image={this.contentArray[this.index].img} alt={this.contentArray[this.index].caption} caption={this.contentArray[this.index].caption + this.string} />
                         <div className={this.index === 0 ? 'NA' : ''}> <i id={"btnL"} onClick={this.indexLeft}  className="fas fa-4x fa-caret-left"></i> </div>
                         <div className={this.index === (this.contentArray.length - 1) ? 'NA' : ''}> <i id={"btnR"} onClick={this.indexRight}  className="fas fa-4x fa-caret-right"></i> </div>

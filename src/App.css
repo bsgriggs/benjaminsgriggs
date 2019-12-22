@@ -19,15 +19,19 @@
 	.Img16x9 { width: 85vw !important;}
 	.Img1x1_Small {	width: 85vw !important;}
 	.Img4x3{ width: 85vw !important;}
-	.App {margin-top: 150px !important;}
+	.Padding{ height: calc(var(--main-nav-height) + var(--sub-nav-height)) !important;}
 }
 :root{
 	--dark-purple: #65379B;
 	--purdue-gold: #C28E0E;
+	--main-nav-height: 65px;
+	--sub-nav-height: 50px;
 }
 
-.App {
-	margin-top: 105px;
+.Padding{
+	display: block;
+	width: 100%;
+	height: var(--main-nav-height);
 }
 
 html {
@@ -62,9 +66,9 @@ h1, h2, h3, h4, h5, h6{
 h1{ font-size: calc(.75vw + 26px);}
 h2{ font-size: calc(.75vw + 23px);}
 h3{ font-size: calc(.75vw + 20px);}
-h4{	font-size: calc(.75vw + 15px);}
-h5{	font-size: calc(.75vw + 10px);}
-h6{	font-size: calc(.75vw + 5px);}
+h4{ font-size: calc(.75vw + 15px);}
+h5{ font-size: calc(.75vw + 10px);}
+h6{ font-size: calc(.75vw + 5px);}
 
 
 a{
@@ -95,7 +99,7 @@ i{
 }
 
 .Clickable{
-    cursor: pointer;
+	cursor: pointer;
 	width: inherit;
 }
 

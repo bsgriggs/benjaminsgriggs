@@ -18,7 +18,7 @@ class Projects extends React.Component{
 				<PageNav NavTitles={NavTitles} NavIDs={NavIDs}/>
 				<div>
 					{projects.map(function(project, index){
-						return (<Project key={index} project={project}/>)
+						return (<Project key={index} index={index} project={project}/>)
 					})}
 				</div>				
 			</div>

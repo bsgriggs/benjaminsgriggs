@@ -1,0 +1,99 @@
+{
+        "skills":[
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "mendix.jpg",
+                        "progress": 100
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "java.jpg",
+                        "progress": 80
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "android.jpg",
+                        "progress": 80
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "c.jpg",
+                        "progress": 60
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "cSharp.jpg",
+                        "progress": 60
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "css.jpg",
+                        "progress": 90
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "html.jpg",
+                        "progress": 90
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "javascript.jpg",
+                        "progress": 80
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "react.jpg",
+                        "progress": 70
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "nodejs.jpg",
+                        "progress": 50
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "python.jpg",
+                        "progress": 60
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "keras.jpg",
+                        "progress": 60
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "scikitLearn.jpg",
+                        "progress": 60
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "github.jpg",
+                        "progress": 90
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "oracle.jpg",
+                        "progress": 70
+                },
+                {
+                        "type":"Programming Languages and Tools",
+                        "img": "postgresql.jpg",
+                        "progress": 90
+                },
+                {
+                        "type":"Operating Systems",
+                        "img": "windows.jpg",
+                        "progress": 100
+                },
+                {
+                        "type":"Operating Systems",
+                        "img": "raspberry.jpg",
+                        "progress": 80
+                },
+                {
+                        "type":"Operating Systems",
+                        "img": "ubuntu.jpg",
+                        "progress": 80
+                }
+        ]
+}

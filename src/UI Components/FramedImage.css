@@ -1,6 +1,3 @@
-@media only screen and (max-width: 700px) {
-
-}
 .Frame{
     width: inherit;
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 40%, #6457C6 80%);
@@ -17,6 +14,8 @@
     color: white !important;
     text-align: center !important;
     line-height: 1.5 !important;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 40%, #6457C6 80%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .imageFrame{

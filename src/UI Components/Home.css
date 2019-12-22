@@ -33,7 +33,7 @@
 	} .HomeNav a{
 		color: var(--dark-purple) !important;
 		border-color: var(--dark-purple) !important;
-		padding: 0.5vh 1.5vw !important;
+		padding: 0.5vh 1vw !important;
 	} .HomeNav a:hover{
 		background-color: #FFFFFF !important;
 	}
@@ -104,7 +104,7 @@
 	border-style: solid;
 	font-size: calc(1vw + 12px);
 	font-weight: bold;
-	padding: 1vh 2vw;
+	padding: 1vh 1.5vw;
 	margin: auto;
 	-webkit-transition : 500ms ease-out;
 	-moz-transition :  500ms ease-out;

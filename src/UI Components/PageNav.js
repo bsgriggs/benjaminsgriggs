@@ -21,7 +21,7 @@ class PageNav extends React.Component{
                 const NavIDs = this.NavIDs
                 return(
                         <div id="NavMenu" className="PageNav_Outer Left" onClick={this.slideMenu} >
-                                <p>Scroll to Project:</p>
+                                <p>Scroll to Project</p>
                                 <div className="PageNav_Inner">
                                         <i className="fas fa-bars"></i>
                                         {this.NavTitles.map(function(nav, index){

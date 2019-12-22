@@ -1,329 +1,386 @@
 {
-        "projects":[
+        "projects": [
                 {
-                        "key": 0,
-                        "id":"ATP",
-                        "title":"Agriculture Technology Procurement",
-                        "link_title":"Requires Purdue Login",
-                        "link":"https://purdueatp.mendixcloud.com/",
-                        "content":[
-                                { 
-                                        "key": 0,
-                                        "img": "atpHome.jpg", 
-                                        "caption":"Homepage",
-                                        "description":" Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices.\nHere you can see the homepage for the standard user role. I designed the interface to use these Purdue themed cards in the menus. As you can see under 'MyOrders', the cards have the ability to display information - like warnings - related to the menu. Updates for the user will show in green while warnings will show in red. For example, the number of orders that required action now will show in red."
+                        "id": "passvault",
+                        "date": "December 2019",
+                        "title": "Password Vault",
+                        "link_title": "Source Code",
+                        "link": "https://github.com/bsgriggs/PasswordVault",
+                        "content": [
+                                {
+                                        "img": "passHome.jpg",
+                                        "scale": "30vw",
+                                        "caption": "Main Activity",
+                                        "description": "Password Vault is my final class project for Android Development. We wanted to create a localized application for generating, storing, and viewing passwords. Most current solutions have a premium or use randomly selected characters. Our design uses a word bank to make passwords with memorable, randomly selected words. Additionally, our app stores the passwords in a locally encrypted file.\nThis screenshot is the app’s main menu and contains 3 activities. In the top left, there is a hamburger menu with a slider providing the same 3 options in addition to an option for the home menu. This slider is available all throughout the app."
                                 },
-                                { 
-                                        "key": 1,
-                                        "img": "atpDashboard.jpg", 
-                                        "caption":"ATP Order Statistics",
-                                        "description":"Our users required the ability to see the status of the application at a glance. As ordering software, this includes the provided graphs of many different object states (i.e. Order Statuses).\nThese graphs include the aforementioned red warnings. However, these warnings inform our users of the number of orders that have been in that status for 7 days or more. This way, the Agriculture department can track down orders that should have progressed by now. This particular, acceptance data set has several warnings for testing purposes."
+                                {
+                                        "img": "passStore.jpg",
+                                        "scale": "30vw",
+                                        "caption": "Store New Password",
+                                        "description": "The ‘Store Password’ activity provides all of the attributes we decided to capture for a password. The ‘Generate’ button opens the next activity and the ‘Copy’ button copies the password field to the clipboard.\nThe ‘Color Profile’ buttons set all of the fields to the selected. Below the buttons (not visible) is a field for the user to enter any color Hex, a ‘Launch’ button that opens the URL in a web browser, and a ‘Save’ button that encrypts and writes to the file."
                                 },
-                                { 
-                                        "key": 2,
+                                {
+                                        "img": "passGen.jpg",
+                                        "scale": "30vw",
+                                        "caption": "Generate New Password",
+                                        "description": "The ‘Generate New Password’ activity provides 4 attributes for creating a new password. The ‘Length’ determines the number and length of the randomly picked word(s). We decided to use words as apposed to randomly selected characters, because words are more memorable that characters and would provide a better user experience.\nThe ‘Numbers’ and ‘Symbols’ checkboxes determine what needs appended to the chosen word(s) to meet the password’s criteria. The ‘Capitals’ checkbox randomly picks one of the characters in the chosen word(s) and capitalizes it."
+                                },
+                                {
+                                        "img": "passList.jpg",
+                                        "scale": "30vw",
+                                        "caption": "Password List",
+                                        "description": "The ‘Passwords’ activity lists the passwords that have been saved to the file. If the user taps on of the listed items, the ‘Store Password’ activity runs and allows the user to change that password’s information.\nThe displayed text is the Password’s name given to it by the user. In the future, the list would have a symbol in the color selected in the color profile. Additionally, we want to provide the ability for the user to copy that password to the clipboard without going to the ‘Store Password’ activity. More details about potential future features are available on the GitHub page linked above."
+                                }
+                        ],
+                        "key_contributions": [
+                                {
+                                        "contribution": "Designed the Entire UI"
+                                },
+                                {
+                                        "contribution": "Implimented Color Profile Button Actions"
+                                },
+                                {
+                                        "contribution": "Created the Application Framework"
+                                },
+                                {
+                                        "contribution": "Designed the Local Password Storage I/O"
+                                }
+                        ],
+                        "tech_stack": [
+                                {
+                                        "img": "android.jpg"
+                                },
+                                {
+                                        "img": "java.jpg"
+                                },
+                                {
+                                        "img": "github.jpg"
+                                }
+                        ]
+                },
+                {
+                        "id": "ATP",
+                        "title": "Agriculture Technology Procurement",
+                        "date": "October 2019",
+                        "link_title": "Requires Purdue Login",
+                        "link": "https://purdueatp.mendixcloud.com/",
+                        "content": [
+                                {
+                                        "img": "atpHome.jpg",
+                                        "scale": "45vw",
+                                        "caption": "Homepage",
+                                        "description": " Agriculture Technology Procurement (ATP) is a web application design for Purdue University's agriculture department to facilitate the ordering, tracking, and procurement of leased devices.\nHere you can see the homepage for the standard user role. I designed the interface to use these Purdue themed cards in the menus. As you can see under 'MyOrders', the cards have the ability to display information - like warnings - related to the menu. Updates for the user will show in green while warnings will show in red. For example, the number of orders that required action now will show in red."
+                                },
+                                {
+                                        "img": "atpDashboard.jpg",
+                                        "scale": "45vw",
+                                        "caption": "ATP Order Statistics",
+                                        "description": "Our users required the ability to see the status of the application at a glance. As ordering software, this includes the provided graphs of many different object states (i.e. Order Statuses).\nThese graphs include the aforementioned red warnings. However, these warnings inform our users of the number of orders that have been in that status for 7 days or more. This way, the Agriculture department can track down orders that should have progressed by now. This particular, acceptance data set has several warnings for testing purposes."
+                                },
+                                {
                                         "img": "atpOrder.jpg",
-                                        "caption":"User Order Wizard",
-                                        "description":"This is the wizard for our users to order their leased devices.\nI designed the grid to give an overview of the devices on an order. You can see that devices with special requests are denoted with an overlapping gear icon - designed by me - as well as the status of that request.\nIn the lower right corner, you can find an order cost summary. Because each device can either be payed for up front or over a lease term, we decided to display the costs dynamically based on the device account allocation settings."
+                                        "scale": "45vw",
+                                        "caption": "User Order Wizard",
+                                        "description": "This is the wizard for our users to order their leased devices.\nI designed the grid to give an overview of the devices on an order. You can see that devices with special requests are denoted with an overlapping gear icon - designed by me - as well as the status of that request.\nIn the lower right corner, you can find an order cost summary. Because each device can either be payed for up front or over a lease term, we decided to display the costs dynamically based on the device account allocation settings."
                                 },
                                 {
-                                        "key": 3,
                                         "img": "atpQuoteLDAP.jpg",
-                                         "caption":"Device Special Quote and LDAP",
-                                        "description":"Here is a small section of the information the Agriculture department requires per device.\nThe top section displays the special order information for this device. The user makes a request. The department verifies with the vendor and enters the cost of those upgrades. The user then has to accept the terms and the order can then proceed to the next stages.\nThe second area is the main advantage of this application over their current system; the ability to verify the data against Purdue's Active Directory. I designed the code to search the Purdue Directory using an LDAP query and the name provided in the textbox. Should the query return multiple responses, the user is presented with a list to choose from with additional information to aid their selection. The device receiver's email is then populated using the queries reponse. Additionally, the response is used to looked up the receiver's position using an SAP API."},
+                                        "scale": "45vw",
+                                        "caption": "Device Special Quote and LDAP",
+                                        "description": "Here is a small section of the information the Agriculture department requires per device.\nThe top section displays the special order information for this device. The user makes a request. The department verifies with the vendor and enters the cost of those upgrades. The user then has to accept the terms and the order can then proceed to the next stages.\nThe second area is the main advantage of this application over their current system; the ability to verify the data against Purdue's Active Directory. I designed the code to search the Purdue Directory using an LDAP query and the name provided in the textbox. Should the query return multiple responses, the user is presented with a list to choose from with additional information to aid their selection. The device receiver's email is then populated using the queries reponse. Additionally, the response is used to looked up the receiver's position using an SAP API."
+                                },
                                 {
-                                        "key": 4, 
                                         "img": "atpEmail.jpg",
-                                        "caption":"Sample Email Report",
-                                        "description":"I designed the code to check daily specific order conditions and generate emails - like the one you see here - to update users and the Agriculture department on the status of their orders. I designed it such that I can pass an order and the specific instructions at the top on the email to create the email.\nThe email includes a dynamic order link including the id of the order displayed in the email allowing the user to easily login and perform the necessary actions described by the email. This particular email would be sent to a user base well acquainted with the system; therefore, detailed instructions are not necessary."
-                                }                
-                        ],
-                        "key_contributions":[
-                                {
-                                        "key": 0,
-                                        "contribution":"Designed the Entire UI"
-                                },
-                                {
-                                        "key": 1,
-                                        "contribution":"Implimented REST APIs and LDAP Queries"
-                                },
-                                {
-                                        "key": 2,
-                                        "contribution":"Created the Application Framework"
-                                },
-                                {
-                                        "key": 3,
-                                        "contribution":"Designed the Application Database"
-                                },
-                                {
-                                        "key": 4,
-                                        "contribution":"Developed Email Code for Order Status"
-                                },
-                                {
-                                        "key": 5,
-                                        "contribution":"Created an Order Statistics Dashboard"
+                                        "scale": "45vw",
+                                        "caption": "Sample Email Report",
+                                        "description": "I designed the code to check daily specific order conditions and generate emails - like the one you see here - to update users and the Agriculture department on the status of their orders. I designed it such that I can pass an order and the specific instructions at the top on the email to create the email.\nThe email includes a dynamic order link including the id of the order displayed in the email allowing the user to easily login and perform the necessary actions described by the email. This particular email would be sent to a user base well acquainted with the system; therefore, detailed instructions are not necessary."
                                 }
                         ],
-                        "tech_stack":[
+                        "key_contributions": [
                                 {
-                                        "key":0,
-                                        "img":"mendix.jpg"
+                                        "contribution": "Designed the Entire UI"
                                 },
                                 {
-                                        "key":1,
-                                        "img":"java.jpg"
+                                        "contribution": "Implimented REST APIs and LDAP Queries"
                                 },
                                 {
-                                        "key":2,
-                                        "img":"css.jpg"
+                                        "contribution": "Created the Application Framework"
                                 },
                                 {
-                                        "key":3,
-                                        "img":"html.jpg"
+                                        "contribution": "Designed the Application Database"
                                 },
                                 {
-                                        "key":4,
-                                        "img":"javascript.jpg"
+                                        "contribution": "Developed Email Code for Order Status"
                                 },
                                 {
-                                        "key":5,
-                                        "img":"postgresql.jpg"
+                                        "contribution": "Created an Order Statistics Dashboard"
+                                }
+                        ],
+                        "tech_stack": [
+                                {
+                                        "img": "mendix.jpg"
+                                },
+                                {
+                                        "img": "java.jpg"
+                                },
+                                {
+                                        "img": "css.jpg"
+                                },
+                                {
+                                        "img": "html.jpg"
+                                },
+                                {
+                                        "img": "javascript.jpg"
+                                },
+                                {
+                                        "img": "postgresql.jpg"
                                 }
                         ]
                 },
                 {
-                        "key": 1,
-                        "id":"CPM",
-                        "title":"Career Path Maker",
-                        "link_title":"Public Site",
-                        "link":"https://cpm.mendixcloud.com/",
-                        "content":[
-                                { 
-                                        "key":0,
+                        "id": "annlp",
+                        "date": "November 2019",
+                        "title": "Analytics in Natural Language Processing",
+                        "link_title": "Project Materials and Documentation",
+                        "link": "https://drive.google.com/drive/folders/1VrB72Wj2hE5mJ7vjFZe8sKuJ2KcPbTZT?usp=sharing",
+                        "content": [
+                                {
+                                        "img": "dnnResults.jpg",
+                                        "scale": "40vw",
+                                        "caption": "Deep Neural Network Results",
+                                        "description": "Analytics in Natural Language Processing was an independent study guided by Professor Julia Rayz. The goal of the study was to experiment with supervised and unsupervised learning methodology using a hotel review dataset to predict review sentiment. Essentially, I wanted to create a model that would determine if a hotel review was positive or negative. All of the code and documentation is available via the link.\nThis particular graph shows the accuracy of my Deep Neural Network. I build the Deep Neural Network using Keras with a python dictionary -> embedding layer -> 1D convolutional layer -> 1D global max pooling layer -> 8 out, dense layer -> 1 out, dense layer. In my documentation, I explored many different layer settings and reached 95% accuracy."
+                                },
+                                {
+                                        "img": "supervisedResults.jpg",
+                                        "scale": "40vw",
+                                        "caption": "Supervised Learning Results",
+                                        "description": "For the Supervised Learning Methodology, I used the count of word occurrences per document for words I thought would have impact on the review’s sentiment. I started with ‘We/Us/Our’, ‘I/Me’, ‘Room’, ‘Service’, ‘Staff’, and ‘Experience’.\nI used those counts in logistic regression. To improve the model, I added the count of hyponyms in those categories. This improved the results slightly but analyzing this dataset with this approach was limited to 67%."
+                                },
+                                {
+                                        "img": "tfidfResults.jpg",
+                                        "scale": "40vw",
+                                        "caption": "TF-IDF Results",
+                                        "description": "For the Unsupervised learning Methodology, I had two different approaches: TF-IDF vectors and Word2Vec vectors. TF-IDF vectorization is a matrix of every word that occurs in the dataset with each cell being a function of that word’s frequency per document and per dataset. In theory, this helps scale the vector to put less emphasis on common words.\nThese vectors where then clustered using K-Means Clustering. Iterating through each document, I categorized the words in each review by their assigned cluster and used the categorizations in logistic regression. However, my TF-IDF matrix was far too sparse and resulted in small improvements to accuracy over the supervised method yet still reached an accuracy around 75%."
+                                },
+                                {
+                                        "img": "word2vecResults.jpg",
+                                        "scale": "40vw",
+                                        "caption": "Word2Vec Results",
+                                        "description": "For the Word2Vec approach, I used the same process as the TF-IDF method and only changed the vectorization. Word2Vec vectors are created using the probability of the word appearing in a given context. Thus, Word2Vec vectors are denser by nature.\nBut, my dataset still lacked enough occurrences of some words to get a strong probability. The K Means clustering method of training the logistic regression model seemed to reach its limit at 89%."
+                                }
+                        ],
+                        "key_contributions": [],
+                        "tech_stack": [
+                                {
+                                        "img": "python.jpg"
+                                },
+                                {
+                                        "img": "keras.jpg"
+                                },
+                                {
+                                        "img": "scikitLearn.jpg"
+                                }
+                        ]
+                },
+                {
+                        "id": "CPM",
+                        "title": "Career Path Maker",
+                        "date": "December 2018",
+                        "link_title": "Public Site",
+                        "link": "https://cpm.mendixcloud.com/",
+                        "content": [
+                                {
                                         "img": "cpmHome.jpg",
-                                        "caption":"Homepage",
-                                        "description":"Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff to plan their future careers within the university.\nThe homepage displays the hierarchy of Purdue's career streams. Theses are classifers designed to assist Purdue employees understand where their career can go from here. For example, an employee current in Professional 2 would look at jobs related to theirs in Professional 3.\nThe ladder on the right side of the screen includes check boxes. These checkboxes allow users, who already know what career stream to search, to select a career stream to be caried to the next page and added to the search criteria."
+                                        "scale": "45vw",
+                                        "caption": "Homepage",
+                                        "description": "Career Path Maker (CPM) is a Mendix based web application designed for Purdue University faculty and staff to plan their future careers within the university.\nThe homepage displays the hierarchy of Purdue's career streams. Theses are classifers designed to assist Purdue employees understand where their career can go from here. For example, an employee current in Professional 2 would look at jobs related to theirs in Professional 3.\nThe ladder on the right side of the screen includes check boxes. These checkboxes allow users, who already know what career stream to search, to select a career stream to be caried to the next page and added to the search criteria."
                                 },
-                                { 
-                                        "key":1,
+                                {
                                         "img": "cpmSearch.jpg",
-                                        "caption":"Search Criteria",
-                                        "description":"The first field is the career stream from the homescreen followed by the ability to search job titles or job codes by text.\nA job family contains many job sub families. This relationship is reflected in the interface by only displaying sub families that belong to the selected family.\nThe application automatically applies the criteria to make a new search after each selection. This way, the remaining selectable items are criteria that exist in the database. For example, selecting the career stream Management 3 will result in the selectable Pay Band list to only display pay bands that can have a Management 3 career stream."
-                                },
-                                { 
-                                        "key":2,
-                                        "img":"cpmJob.jpg",
-                                        "caption":"View Job",
-                                        "description":"This job overview page I designed shows all of the categorial information about a job a Purdue Univeristy.\nThe 'next' and 'previous' buttons navigate through the search result list generated by the previous page. The job title is displayed in a nice Purdue gold container.\nIn the lower right corner, you can see a print button. This creates a PDF version of this page for employees to share with their manager when planning their career."
-                                },
-                                { 
-                                        "key":3,
-                                        "img": "cpmScheduledEvent.jpg", 
-                                        "caption":"Scheduled Events",
-                                        "description":"My largest contribution to this project is data integration.\nYou can see an interface I made to allow the users to select different methods of integration and set the time of execution. It allows our users to call REST services or load a file from an SFTP or SMB file share.\nThe items found using these methods get synronized based on their job code. Essentially, if the job code in the file matches one already in the database, then the application updates the data for that job rather than create a new one."
-                                }                              
-                        ],
-                        "key_contributions":[
-                                {
-                                        "key": 0,
-                                        "contribution":"Designed the Entire UI"
+                                        "scale": "45vw",
+                                        "caption": "Search Criteria",
+                                        "description": "The first field is the career stream from the homescreen followed by the ability to search job titles or job codes by text.\nA job family contains many job sub families. This relationship is reflected in the interface by only displaying sub families that belong to the selected family.\nThe application automatically applies the criteria to make a new search after each selection. This way, the remaining selectable items are criteria that exist in the database. For example, selecting the career stream Management 3 will result in the selectable Pay Band list to only display pay bands that can have a Management 3 career stream."
                                 },
                                 {
-                                        "key": 1,
-                                        "contribution":"Developed Database Integration APIs"
+                                        "img": "cpmJob.jpg",
+                                        "scale": "45vw",
+                                        "caption": "View Job",
+                                        "description": "This job overview page I designed shows all of the categorial information about a job a Purdue Univeristy.\nThe 'next' and 'previous' buttons navigate through the search result list generated by the previous page. The job title is displayed in a nice Purdue gold container.\nIn the lower right corner, you can see a print button. This creates a PDF version of this page for employees to share with their manager when planning their career."
                                 },
                                 {
-                                        "key": 2,
-                                        "contribution":"Created the Application Framework"
-                                },
-                                {
-                                        "key": 3,
-                                        "contribution":"Designed the Application Database"
-                                },
-                                {
-                                        "key": 4,
-                                        "contribution":"Implimented Scheduled Database I/O"
+                                        "img": "cpmScheduledEvent.jpg",
+                                        "scale": "45vw",
+                                        "caption": "Scheduled Events",
+                                        "description": "My largest contribution to this project is data integration.\nYou can see an interface I made to allow the users to select different methods of integration and set the time of execution. It allows our users to call REST services or load a file from an SFTP or SMB file share.\nThe items found using these methods get synronized based on their job code. Essentially, if the job code in the file matches one already in the database, then the application updates the data for that job rather than create a new one."
                                 }
                         ],
-                        "tech_stack":[
+                        "key_contributions": [
                                 {
-                                        "key":0,
-                                        "img":"mendix.jpg"
+                                        "contribution": "Designed the Entire UI"
                                 },
                                 {
-                                        "key":1,
-                                        "img":"java.jpg"
+                                        "contribution": "Developed Database Integration APIs"
                                 },
                                 {
-                                        "key":2,
-                                        "img":"css.jpg"
+                                        "contribution": "Created the Application Framework"
                                 },
                                 {
-                                        "key":3,
-                                        "img":"html.jpg"
+                                        "contribution": "Designed the Application Database"
                                 },
                                 {
-                                        "key":4,
-                                        "img":"javascript.jpg"
+                                        "contribution": "Implimented Scheduled Database I/O"
+                                }
+                        ],
+                        "tech_stack": [
+                                {
+                                        "img": "mendix.jpg"
                                 },
                                 {
-                                        "key":5,
-                                        "img":"postgresql.jpg"
+                                        "img": "java.jpg"
+                                },
+                                {
+                                        "img": "css.jpg"
+                                },
+                                {
+                                        "img": "html.jpg"
+                                },
+                                {
+                                        "img": "javascript.jpg"
+                                },
+                                {
+                                        "img": "postgresql.jpg"
                                 }
                         ]
                 },
                 {
-                        "key": 2,
-                        "id":"bsgriggs",
-                        "title":"benjaminsgriggs.com",
-                        "link_title":"Source Code",
-                        "link":"https://github.com/bsgriggs/benjaminsgriggs/",
-                        "content":[
-                                { 
-                                        "img": "benjaminsgriggs.jpg", 
-                                        "caption":"This Homepage",
-                                        "description":"This Website! This website is an experimental website to test development techniques. Also, this website is a catalog of my trip to Turkey in the Summer of 2019.\nGiven that you can already see the entirety of the project, it doesn't make sense to provide many screenshots. If you have any questions or feedback, then refer to the Contact page."
+                        "id": "bsgriggs",
+                        "title": "benjaminsgriggs.com",
+                        "link_title": "Source Code",
+                        "link": "https://github.com/bsgriggs/benjaminsgriggs/",
+                        "content": [
+                                {
+                                        "img": "benjaminsgriggs.jpg",
+                                        "scale": "45vw",
+                                        "caption": "This Homepage",
+                                        "description": "This Website! This website is an experimental website to test development techniques. Also, this website is a catalog of my trip to Turkey in the Summer of 2019.\nGiven that you can already see the entirety of the project, it doesn't make sense to provide many screenshots. If you have any questions or feedback, then refer to the Contact page."
                                 }
                         ],
-                        "key_contributions":[
-                        ],
-                        "tech_stack":[
+                        "key_contributions": [],
+                        "tech_stack": [
                                 {
-                                        "key":0,
-                                        "img":"css.jpg"
+                                        "img": "css.jpg"
                                 },
                                 {
-                                        "key":1,
-                                        "img":"html.jpg"
+                                        "img": "html.jpg"
                                 },
                                 {
-                                        "key":2,
-                                        "img":"javascript.jpg"
+                                        "img": "javascript.jpg"
                                 },
                                 {
-                                        "key":3,
-                                        "img":"react.jpg"
+                                        "img": "react.jpg"
                                 },
                                 {
-                                        "key":4,
-                                        "img":"github.jpg"
+                                        "img": "github.jpg"
                                 }
                         ]
                 },
                 {
-                        "key": 3,
-                        "id":"cost",
-                        "title":"Cost Distribution",
-                        "link_title":"Requires Purdue Login",
-                        "link":"https://costdistribution100.mendixcloud.com/",
-                        "content":[
+                        "id": "cost",
+                        "title": "Cost Distribution",
+                        "link_title": "Requires Purdue Login",
+                        "link": "https://costdistribution100.mendixcloud.com/",
+                        "content": [
                                 {
-                                        "key": 0,
-                                        "img":"costHome.jpg",
-                                        "caption":"Cost Plan",
-                                        "description":"Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me.\nIn one case, an application administrator had deleted a user from the application database to prevent them from accessing the application. This resulted in the system being unable to retieve any objects referring to the former account. After I identified this mistake, I used a backup and some SQL commands to 'stitch' together the missing data and restore the system to operation.\nDue to security concerns, I am unable to provide any more detailed screenshots."
+                                        "img": "costHome.jpg",
+                                        "scale": "45vw",
+                                        "caption": "Cost Plan",
+                                        "description": "Cost Distribution is a web application used by Purdue University to estimate and track the costs of their construction projects. Developed by EPI-USE of West Lafayette and supported by me.\nIn one case, an application administrator had deleted a user from the application database to prevent them from accessing the application. This resulted in the system being unable to retieve any objects referring to the former account. After I identified this mistake, I used a backup and some SQL commands to 'stitch' together the missing data and restore the system to operation.\nDue to security concerns, I am unable to provide any more detailed screenshots."
                                 },
                                 {
-                                        "key": 1,
-                                        "img":"costOverview.jpg",
-                                        "caption":"Cost Plan Overview",
-                                        "description":"The Cost Distribution application contains many Cost Plans and each cost plan can have many versions. The page displays the Cost Plan's categorical class along with their versions.\nHere, you can see that page for users to select differed versions of the cost plans. Because this appliation is confidencial, I am only allowed to show you a dummy cost plan with one version."
+                                        "img": "costOverview.jpg",
+                                        "scale": "45vw",
+                                        "caption": "Cost Plan Overview",
+                                        "description": "The Cost Distribution application contains many Cost Plans and each cost plan can have many versions. The page displays the Cost Plan's categorical class along with their versions.\nHere, you can see that page for users to select differed versions of the cost plans. Because this appliation is confidencial, I am only allowed to show you a dummy cost plan with one version."
                                 },
                                 {
-                                        "key": 2,
-                                        "img":"costReport.jpg",
-                                        "caption":"Cost Plan PDF",
-                                        "description":"Aside from production support, I contributed to this project with reporting. Here, you can see a sample report with a quick snippit of the cost plan's details. The 'Current Funding' entry is calculated using a REST API to verify the amound of allocated funding for the project at that time.'\nThis report is many pages long, so I have only provided the first page."
+                                        "img": "costReport.jpg",
+                                        "scale": "45vw",
+                                        "caption": "Cost Plan PDF",
+                                        "description": "Aside from production support, I contributed to this project with reporting. Here, you can see a sample report with a quick snippit of the cost plan's details. The 'Current Funding' entry is calculated using a REST API to verify the amound of allocated funding for the project at that time.'\nThis report is many pages long, so I have only provided the first page."
                                 }
                         ],
-                        "key_contributions":[
+                        "key_contributions": [
                                 {
-                                        "key": 0,
-                                        "contribution":"Consulted PDF Report Generation"
+                                        "contribution": "Consulted PDF Report Generation"
                                 },
                                 {
-                                        "key": 1,
-                                        "contribution":"Supported Prodecution Application"
+                                        "contribution": "Supported Prodecution Application"
                                 },
                                 {
-                                        "key": 2,
-                                        "contribution":"Managed Production Database Errors"
+                                        "contribution": "Managed Production Database Errors"
                                 },
                                 {
-                                        "key": 3,
-                                        "contribution":"Implimented REST APIs for Reporting"
+                                        "contribution": "Implimented REST APIs for Reporting"
                                 }
                         ],
-                        "tech_stack":[
+                        "tech_stack": [
                                 {
-                                        "key":0,
-                                        "img":"mendix.jpg"
+                                        "img": "mendix.jpg"
                                 },
                                 {
-                                        "key":1,
-                                        "img":"java.jpg"
+                                        "img": "java.jpg"
                                 },
                                 {
-                                        "key":2,
-                                        "img":"css.jpg"
+                                        "img": "css.jpg"
                                 },
                                 {
-                                        "key":3,
-                                        "img":"html.jpg"
+                                        "img": "html.jpg"
                                 },
                                 {
-                                        "key":4,
-                                        "img":"javascript.jpg"
+                                        "img": "javascript.jpg"
                                 },
                                 {
-                                        "key":5,
-                                        "img":"postgresql.jpg"
+                                        "img": "postgresql.jpg"
                                 }
                         ]
                 },
                 {
-                        "key": 4,
-                        "id":"tetris",
-                        "title":"ASCII Tetris",
-                        "link_title":"Source Code",
-                        "link":"https://github.com/bsgriggs/tetris/",
-                        "content":[
-                                { 
-                                        "key":0,
+                        "id": "tetris",
+                        "date": "May 2019",
+                        "title": "ASCII Tetris",
+                        "link_title": "Source Code",
+                        "link": "https://github.com/bsgriggs/tetris/",
+                        "content": [
+                                {
                                         "img": "tetris.jpg",
-                                        "caption":"Terminal Tetris",
-                                        "description":"ASCII Tetris was a fun class project developed to run in a linux terminal and expand our understanding of C data structures. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped. Essentially, the program initially fills a queue of 5 blocks randomly. Then, the program dequeues a block, adds it to the top of the interface, and randomly selects another block to add to the queue.\nAlso, the program includes weighted scoring. The higher level the play is in the game, the more points they receive for a line clear."
+                                        "scale": "45vw",
+                                        "caption": "Terminal Tetris",
+                                        "description": "ASCII Tetris was a fun class project developed to run in a linux terminal and expand our understanding of C data structures. I designed the interface along with the queue to impliment the randomly selected blocks to be dropped. Essentially, the program initially fills a queue of 5 blocks randomly. Then, the program dequeues a block, adds it to the top of the interface, and randomly selects another block to add to the queue.\nAlso, the program includes weighted scoring. The higher level the play is in the game, the more points they receive for a line clear."
                                 }
                         ],
-                        "key_contributions":[
+                        "key_contributions": [
                                 {
-                                        "key": 0,
-                                        "contribution":"Designed the Entire User Interface"
+                                        "contribution": "Designed the Entire User Interface"
                                 },
                                 {
-                                        "key": 1,
-                                        "contribution":"Implimented Structured Queues for Blocks"
+                                        "contribution": "Implimented Structured Queues for Blocks"
                                 },
                                 {
-                                        "key": 2,
-                                        "contribution":"Developed User Input Handling"
+                                        "contribution": "Developed User Input Handling"
                                 },
                                 {
-                                        "key": 3,
-                                        "contribution":"Implimented Random Block Picker"
+                                        "contribution": "Implimented Random Block Picker"
                                 }
                         ],
-                        "tech_stack":[
+                        "tech_stack": [
                                 {
-                                        "key":0,
-                                        "img":"c.jpg"
+                                        "img": "c.jpg"
                                 },
                                 {
-                                        "key":1,
-                                        "img":"github.jpg"
+                                        "img": "github.jpg"
                                 },
                                 {
-                                        "key":2,
-                                        "img":"ubuntu.jpg"
+                                        "img": "ubuntu.jpg"
                                 }
                         ]
                 }

@@ -51,6 +51,7 @@ const Travel = () => {
 
     return(
         <div className="Travel">
+            <span className="Padding"></span>
             <h3>Turkey 2019</h3>
             <hr></hr>
             <div className="TravelRow">

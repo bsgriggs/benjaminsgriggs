@@ -12,9 +12,3 @@
         align-items: center;
         flex-wrap: wrap;
 }
-
-.skillImages img{
-	width: 8%;
-	height: 8%;
-	margin: 1vh 5vw
-}

@@ -35,6 +35,7 @@ const Contact = () => {
 
     return(
         <div className="Contact">
+            <span className="Padding"></span>
             <h3>Business Contact</h3>
             <hr></hr>
             <div className="Row">

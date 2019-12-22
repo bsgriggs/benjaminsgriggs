@@ -16,6 +16,7 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         width: 40%;
+        top: calc(var(--main-nav-height) + var(--sub-nav-height));
         align-items: center;
         cursor: pointer;
 } .PageNav_Outer  i {
